@@ -1,0 +1,17 @@
+/* Website template by freewebsitetemplates.com */
+
+#header div div#section ul li a {
+	padding: 0;
+}
+
+#content div div#account div form table tr td label input#rememberme {
+	vertical-align: middle;
+}
+
+#content div.home div.section ul li {
+	margin-top: 11px;
+}
+
+#footer div.home div div.section {
+	height: 285px;
+}

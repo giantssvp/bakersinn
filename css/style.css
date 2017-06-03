@@ -1,0 +1,1197 @@
+/* Website template by freewebsitetemplates.com */
+
+body {
+	background: #6a3e4f;
+	color: #361511;
+	font-family: Verdana;
+	font-size: 12px;
+	margin: 0;
+	min-width: 960px;
+	padding: 0;
+	width: 100%;
+}
+
+a {
+	outline: none;
+}
+
+img {
+	border: 0;
+}
+
+p a {
+	color: #df4b9f;
+}
+
+#header {
+	background: #f5f5f5 url(../images/bg-body.gif) repeat-x center top;
+}
+
+#header div {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header div div {
+	height: 110px;
+	overflow: hidden;
+	position: relative;
+}
+
+#header div div div#logo {
+	float: left;
+	width: 350px;
+	height: 195px;
+}
+
+#header div div div {
+	float: right;
+	height: 110px;
+	width: auto;
+}
+
+#header div div div div {
+	display: block;
+	float: none;
+    height: auto;
+    padding-bottom: 40px;
+	padding-left: 134px;
+    margin-top: 20px;
+	overflow: hidden;
+	width: auto;
+}
+
+#header div div div div a {
+	border-right: 1px solid #6c404f;
+	color: #6c404f;
+	display: block;
+	float: left;
+	font-weight: bold;
+	line-height: 13px;
+	padding: 0 5px;
+	text-decoration: none;
+}
+
+#header div div div div a.last {
+	border: 0;
+	padding-right: 0;
+}
+
+#header div div div form {
+	position: absolute;
+	right: 0;
+	top: 70px;
+	height: 30px;
+	width: 290px;
+}
+
+#header div div div form input {
+	float: left;
+	line-height: 30px;
+}
+
+#header div div div form input#search {
+	background: url(../images/input-search.gif) no-repeat 0 0;
+	border: 0;
+	height: 30px;
+	padding: 0 5px;
+	width: 220px;
+}
+
+#header div div div form input#searchbtn {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -291px;
+	border: none;
+	height: 30px;
+	width: 60px;
+}
+
+#header div ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+#header div ul li {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	width: 160px;
+}
+
+#header div ul li a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -205px;
+	color: #5b5c5e;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #e8edf1;
+	text-transform: capitalize;
+}
+
+#header div ul li a:hover, #header ul li.current a {
+	color: #b13c68;
+	text-shadow: 1px 1px 0 #ebb8c7;
+}
+
+#header div ul li.current a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -97px;
+}
+
+#header div div#section, #header div div.section {
+	background: #330C00;
+	height: 360px;	
+	padding: 10px;
+	width: 940px;
+}
+
+#header div div.section {
+	height: 190px;
+}
+
+#header div div#section ul {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#header div div#section ul li {
+	background: none;
+	float: none;
+    height: 55px;
+    line-height: 34px;
+	padding: 1px 0 1px;
+    width: 230px;
+}
+
+#header div div#section ul li a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -147px;
+	color: #f5ffff;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	font-size: 13px;
+    font-weight: bold;
+	padding: 1px 0 1px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #ad657d, -1px -1px 0 #ad657d, -1px 1px 0 #ad657d, 1px -1px 0 #ad657d;
+	text-transform: upper-alpha;
+}
+
+#header div div#section ul li a:hover, #header div div#section ul li.selected a {
+	color: #7c0d37;
+	text-shadow: 1px 1px 0 #f7cade, -1px -1px 0 #f7cade, -1px 1px 0 #f7cade, 1px -1px 0 #f7cade;
+}
+
+#header div div#section ul li.selected a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 0;
+}
+
+#header div div#section img {
+	float: right;
+}
+
+#content {
+	background: #f5f5f5;
+	height: auto;
+	width: 100%;	
+}
+
+#content div.home {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 30px 0;
+	width: 960px;
+}
+
+#content div#services, #content div#about, #content div {
+	margin: 0 auto;
+	padding: 10px 30px 30px;
+	position: relative;
+	width: 900px;
+}
+
+#content div#services, #content div#about  {
+	overflow: hidden;
+}
+
+#content div#about div.aside,
+#content div#services div.aside {
+	float: left;
+	padding: 0;
+	width: 420px;
+}
+
+#content div#services div.aside span {
+	background: url(../images/sprite-icons.gif) no-repeat 0 0;
+	color: #84284D;
+	font-size: 18px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	text-indent: 25px;
+}
+
+#content div#services div.aside p {
+	color: #5F5D5E;
+	line-height: 28px;
+	margin: 5px 0 30px;
+	text-align: justify;
+}
+
+#content div#about div.section,
+#content div#services div.section {
+	float: right;
+	padding: 15px 0 0;
+	width: 420px;
+}
+
+#content div#about div.section div#visitshop,
+#content div#services div.section div#visitshop,
+#content div div#visitshop {
+	background: url(../images/bg-sweets.gif) no-repeat center top;
+	height: 210px;
+    padding: 0;
+	position: relative;
+	right: 0;
+    width: 420px;
+}
+
+#content div div#visitshop {
+	right: 30px;
+	right: 30px;
+	position: absolute;
+}
+
+#content div p {
+	line-height: 28px;
+}
+
+#content div#about div.section div#visitshop div,
+#content div#services div.section div#visitshop div,
+#content div div#visitshop div {
+	background: url(../images/pie.jpg) no-repeat 205px bottom;
+	height: 205px;
+    margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+#content div#about div.section div#visitshop div span,
+#content div#services div.section div#visitshop div span,
+#content div div#visitshop div span {
+	display: block;
+    height: 157px;
+    position: absolute;
+    right: 1px;
+    top: 25px;
+    width: 211px;
+}
+
+#content div#about div.section div#visitshop div p,
+#content div#services div.section div#visitshop div p,
+#content div div#visitshop div p {
+	color: #78394E;
+    font-size: 23px;
+    margin: 0;
+	padding-left: 20px;
+	padding-top: 30px;
+}
+
+#content div#about div.section div#visitshop div p span,
+#content div#services div.section div#visitshop div p span,
+#content div div#visitshop div p span {
+	color: #d1467d;
+    display: block;
+    font-family: Trebuchet MS;
+    font-size: 28px;
+	font-style: italic;
+	height: auto;
+    position: static;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+#content div#about div.section div#visitshop div a.visit,
+#content div div.section div#visitshop div a.visit,
+#content div div#visitshop div a.visit {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -491px;
+	color: #6E4253;
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+}
+
+#content div#about div.section div,
+#content div div.section h3 {
+	padding: 10px 0 0;
+	width: auto;
+}
+
+#content div#about div.section div h3,
+#content div div.section h3 {
+	color: #852349;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 10px 0 0;
+}
+
+#content div div.section h3 {
+	margin: 0;
+    padding: 0;
+}
+
+#content div#about div.section div p,
+#content div div.section p {
+	line-height: 28px;
+	margin: 0;
+	text-align: justify;
+}
+
+#content div div.section p {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+#content div#about div.section div a.callus {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -232px;
+	color: #c04973;
+	display: block;
+	font-size: 18px;
+	height: 91px;
+	line-height: 30px;
+	margin-top: 20px;
+	padding-top: 10px;
+	text-decoration: none;
+	text-indent: 80px;
+}
+
+#content div#about div.section div a.callus span {
+	color: #852349;
+	display: block;
+	font-family: Trebuchet MS;
+	font-size: 25px;
+	font-style: italic;
+}
+
+#content div#about div.aside span {
+	background: none;
+	color: #DF4B9F;
+    display: block;
+    font-size: 18px;
+    text-indent: 0;
+}
+
+#content div#about div.aside p {
+	line-height: 28px;
+    margin-bottom: 30px;
+    margin-top: 0;
+	text-align: justify;
+}
+
+#content div h1 {
+	color: #84284d;
+	font-family: Trebuchet MS;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+#content div ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+#content div ul li {
+	float: left;
+	height: 220px;
+	width: 450px;
+}
+
+#content div ul li div {
+	padding: 0;
+    position: relative;
+    width: auto;
+}
+
+#content div ul li div div {
+	left: 30px;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    width: auto;
+}
+
+#content div ul li div div h2 {
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0;
+}
+
+#content div ul li div div h2 a {
+	color: #84284d;
+	text-decoration: none;
+}
+
+#content div ul li div div p {
+	color: #5F5D5E;
+	margin: 0 0 10px;
+	line-height: 28px;
+	width: 185px;
+	text-align: left;
+}
+
+#content div ul li div div a.view {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -451px;
+	color: #84284d;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	width: 120px;
+}
+
+#content div.home div.aside {
+	float: left;
+    height: auto;
+    padding: 0 0 0 20px;
+    width: 430px;
+}
+
+#content div.home div.aside h1 {
+	color: #84284d;
+	font-family: Trebuchet MS;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 0 5px;
+	padding-bottom: 0;
+	text-indent: 0;
+}
+
+#content div.home div.aside p {
+	line-height: 28px;
+	margin: 0;
+	text-align: justify;
+}
+
+#content div.home div.aside p a.readmore {
+	color: #932b50;
+	text-decoration: none;
+}
+
+#content div.home div.section {
+	background: url(../images/bg-foodstory.gif) repeat-y top center;
+	float: right;
+	height: 420px;
+	padding: 20px;
+	width: 430px;
+}
+
+#content div.home div.section div {
+	background: #ebe7e8;
+	float: left;
+	height: 395px;
+	padding: 5px 20px 20px;
+	width: 200px;
+}
+
+#content div.home div.section div h2 {
+	color: #84284d;
+	/* font-family: 'JamesFajardoRegular'; */
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 0 5px;
+}
+
+#content div.home div.section div p {
+	color: #5f5d5e;
+	line-height: 28px;
+	margin: 0;
+	text-align: justify;
+}
+
+#content div.home div.section ul {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+}
+
+#content div.home div.section ul li {
+	display: block;
+    height: auto;
+    margin-top: 9px;
+    width: auto;
+}
+
+#content div.home div.section ul li.first {
+	margin-top: 0;
+}
+
+#content div.home div.section ul li img {
+	border: 6px solid #fefffa;
+}
+
+#content div form p {
+	line-height: 28px;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: justify;
+    width: 420px;
+}
+
+#content div form p span {
+	color: #5F5D5E;
+}
+
+#content div form input {
+	color: #aeaeae;
+	display: block;
+	margin: 20px 0;
+}
+
+#content div form input.textcontact {
+	background: url(../images/input-contact.gif) no-repeat 0 0;
+	border: 0 none;
+	font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    width: 341px;
+}
+
+#content div form textarea {
+	background: #fff;
+	border: 1px solid #cccccc;
+	height: 350px;
+	padding: 5px;
+	width: 380px;
+}
+
+    #content div form input.submit {
+        background: url(../images/sprite-buttons.gif) no-repeat 0 -411px;
+        border: 0;
+        text-indent: -9999px;
+        display: block;
+        margin-left: 150px;
+        height: 30px;
+        width: 120px;
+    }
+
+#content div#blog {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 10px 30px 30px 0;
+	position: relative;
+	width: 1000px;
+}
+
+
+#content div#blog div#articles {
+	float: left;
+	padding: 0;
+	width: 600px;
+}
+
+#content div#blog div#articles ul {
+	list-style: none;
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+#content div#blog div#articles ul li {
+	background: url(../images/bg-post.gif) repeat-y;
+	display: block;
+	height: auto;
+	position: relative;
+	margin-bottom: 30px;
+	width: 600px;
+}
+
+#content div#blog div#articles ul li div {
+	background: url(../images/bg-post-header.gif) no-repeat center top;
+	position: static;
+}
+
+#content div#blog div#articles ul li div div {
+	/*background: url(../images/bg-post-footer.gif) no-repeat center bottom;*/
+}
+
+#content div#blog div#articles ul li div div h1 {
+	font-family: Verdana;
+	font-size: 20px;
+	letter-spacing: 0;
+	padding-top: 20px;
+	text-indent: 125px;
+}
+
+#content div#blog div#articles ul li div div h1 a {
+	color: #84284D;
+	text-decoration: none;
+}
+
+#content div#blog div#articles ul li div div h2 {
+	color: #FF2279;
+    font-family: Verdana;
+    font-size: 20px;
+    letter-spacing: 0;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+#content div#blog div#articles ul li div div p {
+	padding: 0 28px 0 52px;
+	text-align: justify;
+	width: auto;
+}
+
+#content div#blog div#articles ul li div div span.date {
+	color: #F7FFFF;
+    display: block;
+    font-size: 14px;
+    left: 0;
+    line-height: 48px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 84px;
+}
+
+#content div#blog div#articles ul li div div span.connect {
+	display: block;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+#content div#blog div#articles ul li div div span.connect a {
+	display: block;
+    float: left;
+    height: 20px;
+    margin: 0 0 0 5px;
+    text-decoration: none;
+    text-indent: -99999px;
+    width: 20px;
+}
+
+#content div#blog div#articles div.section {
+	background: url(../images/border-horizontal.gif) no-repeat 40px top;
+	float: none;
+    overflow: hidden;
+    padding-left: 35px;
+    width: 617px;
+}
+
+#content div#blog div#articles div.section a.newpost {
+	float: left;
+}
+
+#content div#blog div#articles div.section a.oldpost {
+	float: right
+}
+
+#content div#blog div#articles div.section a {
+	color: #cdc9ca;
+	font-size: 14px;
+	display: block;
+	text-decoration: none;
+}
+
+#content div#blog div#articles div.section a:hover, 
+#content div#blog div#articles div.section a.oldpost {
+	color: #a36e82;
+}
+
+#content div#blog div#articles ul li div div span.connect a.twitter {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -362px;
+}
+
+#content div#blog div#articles ul li div div span.connect a.heart {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -171px;
+}
+
+#content div#blog div#articles ul li div div span.connect a.facebook {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -112px;
+}
+
+#content div#blog div#articles ul li div div span#tag {
+	color: #d1d1d1;
+	display: block;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+
+#content div#blog div#articles ul li div div span#tag a {
+	color: #d1d1d1;
+}
+
+#content div#blog div#articles ul li div div span#tag a:hover {
+	color: #DF4B9F;
+}
+
+#content div#blog div#sidebar {
+	float: right;
+	padding: 0 0 0 15px;
+    width: 380px;
+}
+
+#content div#blog div#sidebar h2 {
+	background: url(../images/sidebar-separator.gif) no-repeat center bottom;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 20px 0 0;
+	padding-bottom: 15px;
+}
+
+#content div#blog div#sidebar h3 {
+	background: url(../images/sidebar-separator.gif) no-repeat center bottom;
+	font-size: 18px;
+	font-weight: normal;
+    margin: 0;
+    padding-top: 10px;
+	padding-bottom: 15px;
+    text-indent: 20px;
+	width: 222px;
+}
+
+#content div#blog div#sidebar h3 a span,
+#content div#blog div#sidebar div p a span,
+#content div#blog div#sidebar div p a:hover,
+#content div#blog div#sidebar h3 a:hover {
+	color: #cf8fa7;
+}
+
+#content div#blog div#sidebar h3 a {
+	background: url(../images/arrow-down.gif) no-repeat 175px 5px;
+	display: block;
+	color: #ff2279;
+	text-decoration: none;
+}
+
+#content div#blog div#sidebar h3.first {
+	padding-top: 5px;
+}
+
+#content div#blog div#sidebar h3.first a {
+	background: url(../images/arrow-up.gif) no-repeat 175px 5px;
+}
+
+#content div#blog div#sidebar div p a {
+	color: #5f5d5e;
+	text-decoration: none;
+}
+
+#content div#blog div#sidebar div p {
+	margin: 0;
+}
+
+#content div#blog div#sidebar div {
+	background: url(../images/sidebar-separator.gif) no-repeat center bottom;
+	padding-right: 0;
+	padding-bottom: 15px;
+	width: auto;
+}
+
+#content div div#account {
+	background: url(../images/bg-form-top-curve.gif) no-repeat center top;	
+	color: #5F5D5E;
+	margin: 60px auto 0;
+	padding: 10px 0 0 ;
+	width: 420px;
+}
+
+#content div div#account div {
+	
+	background: url(../images/bg-form-bottom-curve.gif) no-repeat center bottom;
+	padding: 0 0 10px;
+	width: auto;
+}
+
+#content div div#account div form {
+	background: url(../images/bg-form.gif) repeat-y;
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+#content div div#account div form input {
+	color: #5F5D5E;
+	margin: 0 0 0 10px;
+}
+
+#content div div#account div form span {
+	color: #84284D;
+	display: block;
+	padding: 15px 10px 10px 15px;
+}
+
+#content div div#account div form input#email,
+#content div div#account div form input#login,
+#content div div#account div form input#password,
+#content div div#account div form input#confirmpass,
+#content div div#account div form input#name {
+	border: 1px solid #e0e0e0;
+	height: 25px;
+	width: 310px;
+}
+
+#content div div#account div form input#rememberme {
+	display: inline-block;
+	vertical-align: sub;
+}
+
+#content div div#account div form table {
+	margin-left: 10px;
+}
+
+#content div div#account div form table tr td {
+	padding: 5px 0;
+    text-align: right;
+}
+
+#content div div#account div form table tr td.rememberme {
+	padding: 0;
+	text-align: left;
+}
+
+#content div div#account div form table tr td label input#rememberme {
+	vertical-align: sub;
+}
+
+#content div div#account div form input.submitbtn {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -376px;
+	color: #84284D;
+	border: 0;
+	height: 25px;
+	font-size: 11px;
+	margin-left: 300px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	width: 90px;
+}
+
+#footer {
+	background: #610B0B;
+	width: 100%;
+}
+
+#footer div.home {
+	background: url(../images/bg-footer.gif) repeat-x top left;
+	height: 336px;
+    padding: 0;
+    width: auto;
+}
+
+#footer div.home div, #footer div.section div {
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	width: 960px;
+}
+
+#footer div.home div div.aside, 
+#footer div.section div div.aside {
+	float: left;
+	padding-left: 20px;
+    width: 430px;
+}
+
+#footer div.section div div.aside {
+	padding-left: 30px;
+}
+
+#footer div.home div div.aside div.connect {
+	margin-top: 10px;
+    width: auto;
+}
+
+#footer div.home div div.aside div.connect span,
+#footer div.section div div.connect span {
+	color: #84284D;
+	display: block;
+	font-family: Trebuchet MS;
+	font-style: italic;
+	font-size: 18px;	
+	margin: 0 0 5px;
+}
+
+#footer div.home div div.aside div.connect ul,
+#footer div.section div div.connect ul {
+	list-style: none;
+	margin: 0 0 0 20px;
+	padding: 0;
+	width: 500px;
+}
+
+#footer div.home div div.aside div.connect ul li,
+#footer div.section div div.connect ul li {
+	float: left;
+	padding: 5px 0;
+	width: 200px;
+}
+
+#footer div.home div div.aside div.connect ul li a,
+#footer div.section div div.connect ul li a {
+	color: #84284D;
+    display: block;
+    height: 22px;
+    line-height: 18px;
+    text-decoration: none;
+    text-indent: 30px;
+}
+
+#footer div.home div div.aside div.connect ul li a.facebook,
+#footer div.section div div.connect ul li a.facebook {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -30px;
+}
+
+#footer div.home div div.aside div.connect ul li a.twitter{
+	background: url(../images/sprite-icons.gif) no-repeat 0 -335px;
+}
+
+#footer div.section div div.connect ul li a.twitter {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -416px;
+}
+
+#footer div.home div div.aside div.connect ul li a.subscribe {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -202px;
+}
+
+#footer div.section div div.connect ul li a.subscribe {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -389px;
+}
+
+#footer div.home div div.aside div.connect ul li a.flicker {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -57px;
+}
+
+#footer div.section div div.connect ul li a.flicker {
+	background: url(../images/sprite-icons.gif) no-repeat 0 -56px;
+}
+
+#footer div.home div div.aside div.signup, 
+#footer div.section div div.aside div {
+	background: url(../images/bg-sign-up1.gif) no-repeat 0 0;
+	height: 195px;
+	position: relative;
+	width: auto;
+}
+
+#footer div.home div div.aside div.signup  div,
+#footer div.section div div.aside div div {
+	background: none;
+	height: auto;
+	position: absolute;
+	right: 44px;
+    top: 105px;
+    width: 240px;
+}
+
+#footer div.home div div.aside div.signup  div a,
+#footer div.section div div.aside div div a {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -331px;
+	color: #84284D;
+	display: block;
+	height: 35px;
+	text-indent: -999999px;
+	width: 230px;
+}
+
+#footer div.home div div.aside div.signup  div b,
+#footer div.section div div.aside div div b {
+	color: #674253;
+    display: block;
+    font-size: 22px;
+    text-align: center;
+}
+
+#footer div.home div div.aside div.signup  div b span,
+#footer div.section div div.aside div div b span {
+	color: #af6282;
+}
+
+#footer div.home div div.aside div.signup  div p,
+#footer div.section div div.aside div div p {
+	color: #3e071c;
+	margin: 0;
+}
+
+#footer div.home div div.section {
+	background: url(../images/bg-featured-bottom-curve.jpg) no-repeat center bottom;
+	float: right;
+	height: 283px;
+	margin-top: 19px;
+	width: 471px;
+}
+
+#footer div.section div div.connect {
+	float: right;
+	height: auto;
+	margin-top: 85px;
+	width: 430px;
+}
+
+#footer div.home div div.section div {
+	background: url(../images/bg-featured.jpg) repeat-y;
+	width: auto;
+}
+
+#footer div.home div div.section div div {
+	background: url(../images/bg-featured-heading.gif) no-repeat center top;
+	padding: 75px 20px 0;
+	width: 431px;
+}
+
+#footer div.home div div.section div div h3 {
+	font-family: Trebuchet MS;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0;
+}
+
+#footer div.home div div.section div div h3 a {
+	color: #84284D;
+	text-decoration: none;
+}
+
+#footer div.home div div.section div div p {
+	color: #5F5D5E;
+	line-height: 28px;
+	padding-top: 5px;
+}
+
+#footer div#featured {
+	margin: 0 auto;
+    padding-top: 30px;
+    width: 960px;
+}
+
+#footer div#featured ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+#footer div#featured ul li {
+	float: left;
+	margin-left: 18px;
+	width: 226px;
+}
+
+#footer div#featured ul li.first {
+	margin-left: 0;
+}
+
+#footer div#featured ul li h2 {
+	font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#footer div#featured ul li h2 a {
+	color: #b5d13e;
+	text-decoration: none;
+}
+
+#footer div#featured ul li p {
+	color: #EBD7E0;
+    line-height: 28px;
+	margin: 10px 0 0;
+    text-align: justify;
+}
+
+#footer div#featured ul li p a.readmore {
+	background: url(../images/sprite-buttons.gif) no-repeat 0 -265px;
+	color: #d4a7bb;
+	display: inline-block;
+	height: 16px;
+	font-size: 11px;
+	line-height: 16px;
+	text-align: center;
+	text-decoration: none;
+	width: 65px;
+}
+
+#footer div#navigation {
+	background: #610B0B;
+	height: 40px;
+	margin-top: 0px;
+	width: 100%;
+}
+
+#footer div#navigation div {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#footer div#navigation div ul {
+	background: url(../images/footer-top-border.jpg) no-repeat top center;
+	list-style: none;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 30px 0 0 170px;
+	width: 800px;
+}
+
+#footer div#navigation div ul li {
+	border-left: 1px solid #995870;
+	float: left;
+    font-size: 11px;
+    height: 12px;
+    line-height: 10px;
+}
+
+#footer div#navigation div ul li.first {
+	border: 0;
+}
+
+#footer div#navigation div ul li a {
+	color: #995870;
+	display: block;
+	padding: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase
+}
+
+#footer div#navigation div ul li a:hover {
+	color: #EBD7E0;
+}
+
+#footer div#navigation div p {
+	color: #995870;
+	font-size: 11px;
+	margin: 0;
+	text-align: center;
+}
+
+#footer div.section {
+	background: url(../images/bg-footer2.gif) repeat-x top left;
+	height: 226px;
+    padding: 0;
+    width: auto;
+}

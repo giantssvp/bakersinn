@@ -47,66 +47,66 @@
 	</div>
 	<div id="content">
 		<div>
-			<h1>The Pastry shop</h1>
+			<h1>BAKER'S INN</h1>
 			<ul>
 				<li>
 					<div>
 						<div>
-							<h2><a href="index.aspx">Special Treats</a></h2>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-							<a href="index.aspx" class="view">view all</a>
+							<h2>Biscuits</h2>
+							<br><p><b>Assorted crispy biscuits made from pure butter and natural ingredients</b></p>
+							<a href="index.html" class="view">view all</a>
 						</div>
-						<a href="index.aspx"><img src="images/special-treats.jpg" alt="Image" /></a>
+						<img src="images/special-treats.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
 					<div>
 						<div>
-							<h2><a href="index.aspx">Tarts</a></h2>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-							<a href="index.aspx" class="view">view all</a>
+							<h2>Cakes</h2>
+							<br><p><b>Light and fluffy cakes </b></p>
+							<a href="index.html" class="view">view all</a>
 						</div>
-						<a href="index.aspx"><img src="images/tarts.jpg" alt="Image" /></a>
+						<img src="images/tarts.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
 					<div>
 						<div>
-							<h2><a href="index.aspx">Cakes</a></h2>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-							<a href="index.aspx" class="view">view all</a>
+							<h2>Toasts</h2>
+							<br><p><b>Launching Soon ...... </b></p>
+							<a href="index.html" class="view">view all</a>
 						</div>
-						<a href="index.aspx"><img src="images/cakes.jpg" alt="Image" /></a>
+						<img src="images/cakes.jpg" alt="Image" /></a>
 					</div>
 				</li>
 				<li>
 					<div>
 						<div>
-							<h2><a href="index.aspx">Desserts</a></h2>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-							<a href="index.aspx" class="view">view all</a>
+							<h2>Khari</h2>
+							<br><p><b> Crispy and crunchy snack </b></p>
+							<a href="index.html" class="view">view all</a>
 						</div>
-						<a href="index.aspx"><img src="images/dessert.jpg" alt="Image" /></a>
+						<img src="images/dessert.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
 					<div>
 						<div>
-							<h2><a href="index.aspx">Pastries</a></h2>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-							<a href="index.aspx" class="view">view all</a>
+							<h2>Seasonal special</h2>
+							<br><p><b> Gift your near and dear ones our seasonal specialties</b> </p>
+							<a href="index.html" class="view">view all</a>
 						</div>
-						<a href="index.aspx"><img src="images/pastries.jpg" alt="Image" /></a>
+						<img src="images/pastries.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
 					<div>
 						<div>
-							<h2><a href="index.aspx">Healthy Food</a></h2>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-							<a href="index.aspx" class="view">view all</a>
+							<h2></h2>
+							<p></p>
+							
 						</div>
-						<a href="index.aspx"><img src="images/healthy-food.jpg" alt="Image" /></a>
+						<img src="images/healthy-food.jpg" alt="Image" /></a>
 					</div>
 				</li>
 			</ul>

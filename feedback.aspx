@@ -48,19 +48,18 @@
 	<div id="content">
         <div id="blog">
 			<div id="articles">
-				<ul>
-					<li>
-						<div>
-							<div>
-								<span class="date">&nbsp;&nbsp;Dec 3</span>
-								
-								<h1><a href="index.aspx">New Recipes: Fancy Desserts</a></h1>
-								<h2>Let&#39;s bake!</h2>
-								<p>Nullam ut mollis odio. Duis tempor interdum tellus, sit amet aliquet dui dictum a. Quisque in lacus vel dui tempus porttitor mollis vitae dolor. Phasellus lacinia est at massa mattis consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum ultricies scelerisque. Quisque vulputate laoreet erat at consequat. Sed sit amet sem sed lectus consectetur ultrices. Ut tincidunt, augue id sollicitudin placerat, magna nisl tempor arcu, vitae blandit risus ligula nec erat. Nunc convallis, erat in ornare tempus, ligula ipsum lacinia metus, nec bibendum tortor neque eget diam. Donec imperdiet faucibus enim, vel sodales tortor blandit a. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eleifend tincidunt iaculis.</p>
-								
+                <ul>
+                <%for (int i = 0; i < total ; i++){%>
+                    <li>
+						<div>                            
+							<div>                                
+								<span class="date"><%=list[2][i]%> </span>								
+								<h1><a href="index.aspx"> <%=list[0][i]%> </a></h1>
+								<p><%=list[1][i]%></p>								
 							</div>
 						</div>
 					</li>
+                    <!--
 					<li>
 						<div>
 							<div>
@@ -72,12 +71,13 @@
 								
 							</div>
 						</div>
-					</li>
+					</li> -->
+                    <% } //foreach %>
 				</ul>
 				<div class="section">
 					<a href="index.aspx" class="newpost">New Post</a>
 					<a href="index.aspx" class="oldpost">Old Post</a>
-				</div>
+				</div>                
 			</div>
 		<div id="sidebar">
             <br />

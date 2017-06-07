@@ -13,6 +13,8 @@ using MySql.Data.MySqlClient;
 public class db_connect
 {
     private MySqlConnection connection;
+    public List<string>[] list_feedback_show = new List<string>[3];
+
     /*
     public db_connect()
     {
@@ -148,6 +150,47 @@ public class db_connect
     }
 
     //Select statement
+    public List<string>[] feedback_show()
+    {
+        string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC LIMIT 2 OFFSET 0";
+
+        //Create a list to store the result
+        list_feedback_show[0] = new List<string>();
+        list_feedback_show[1] = new List<string>();
+        list_feedback_show[2] = new List<string>();
+
+        //Open connection
+        if (this.OpenConnection() == true)
+        {
+            //Create Command
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            //Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            //Read the data and store them in the list
+            while (dataReader.Read())
+            {
+                list_feedback_show[0].Add(dataReader["Subject"] + "");
+                list_feedback_show[1].Add(dataReader["Message"] + "");
+                list_feedback_show[2].Add(dataReader["Date"] + "");
+            }
+
+            //close Data Reader
+            dataReader.Close();
+
+            //close Connection
+            this.CloseConnection();
+
+            //return list to be displayed
+            return list_feedback_show;
+        }
+        else
+        {
+            return list_feedback_show;
+        }
+    }
+
+    //Select statement
     public List<string>[] Select()
     {
         string query = "SELECT * FROM emp";
@@ -188,7 +231,6 @@ public class db_connect
             return list;
         }
     }
-
     /*private void button1_Click(object sender, EventArgs e)
     {
         string connetionString = null;

@@ -70,8 +70,7 @@
 	</div>
 	<div id="content">
 		<div id="about">
-			<div class="section">
-									
+			<div class="section">									
 				<div>
 					<h3>Address</h3>
 					<p> BAKER'S INN <br /> SHOP NO.1, ISHA CHAMBER, <br /> 853 BHAWANI PETH, <br /> PUNE - 411042 </p>

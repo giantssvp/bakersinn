@@ -23,8 +23,8 @@ public partial class feedback : System.Web.UI.Page
         dogCsv = string.Join(",", list[0][0]);
         total = list[0].Count();
 
-        MessageBox.Show(dogCsv);
-        MessageBox.Show(list[0].Count().ToString());
+        //MessageBox.Show(dogCsv);
+        //MessageBox.Show(list[0].Count().ToString());
     }
 
     protected void submit_button_Click(object sender, EventArgs e)

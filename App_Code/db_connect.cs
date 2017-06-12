@@ -50,7 +50,7 @@ public class db_connect
         try
         {
             connection.Open();
-            MessageBox.Show("Connection Open ! ");
+            //MessageBox.Show("Connection Open ! ");
             return true;
         }
         catch (MySqlException ex)

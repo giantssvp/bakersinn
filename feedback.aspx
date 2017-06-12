@@ -74,15 +74,12 @@
 					</li> -->
                     <% } //foreach %>
 				</ul>
-				<div class="section">
-					<a href="index.aspx" class="newpost">New Post</a>
-					<a href="index.aspx" class="oldpost">Old Post</a>
-				</div>                
+				       
 			</div>
+             
 		<div id="sidebar">
             <br />
-			<h1>Feedback</h1>
-			
+			<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback</h1>
 			<form runat="server">
 				<input type="text" id="name" runat="server" maxlength="30" placeholder="Name" class="textcontact" />
 				<input type="text" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
@@ -92,7 +89,13 @@
 			</form>
 		</div>
 	</div>
-        </div>
+        <div>
+					<a href="index.aspx" class="newpost">New Post</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="index.aspx" class="oldpost">Old Post</a>
+		</div>
+   </div>
+         
 	<div id="footer">		
 		<div id="navigation">
 			<div>

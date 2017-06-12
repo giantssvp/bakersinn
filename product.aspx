@@ -53,8 +53,8 @@
 					<div>
 						<div>
 							<h2>Biscuits</h2>
-							<br><p><b>Assorted crispy biscuits made from pure butter and natural ingredients</b></p>
-							<a href="index.html" class="view">view all</a>
+							<br /><p><b>Assorted crispy biscuits made from pure butter and natural ingredients</b></p>
+							<a href="product_biscuits.aspx" class="view">view all</a>
 						</div>
 						<img src="images/special-treats.jpg" alt="Image" />
 					</div>
@@ -63,28 +63,18 @@
 					<div>
 						<div>
 							<h2>Cakes</h2>
-							<br><p><b>Light and fluffy cakes </b></p>
-							<a href="index.html" class="view">view all</a>
+							<br /><p><b>Light and fluffy cakes </b></p>
+							<a href="product_cakes.aspx" class="view">view all</a>
 						</div>
 						<img src="images/tarts.jpg" alt="Image" />
 					</div>
-				</li>
-				<li>
-					<div>
-						<div>
-							<h2>Toasts</h2>
-							<br><p><b>Launching Soon ...... </b></p>
-							<a href="index.html" class="view">view all</a>
-						</div>
-						<img src="images/cakes.jpg" alt="Image" /></a>
-					</div>
-				</li>
+				</li>				
 				<li>
 					<div>
 						<div>
 							<h2>Khari</h2>
-							<br><p><b> Crispy and crunchy snack </b></p>
-							<a href="index.html" class="view">view all</a>
+							<br /><p><b> Crispy and crunchy snack </b></p>
+							<a href="product_khari.aspx" class="view">view all</a>
 						</div>
 						<img src="images/dessert.jpg" alt="Image" />
 					</div>
@@ -93,10 +83,20 @@
 					<div>
 						<div>
 							<h2>Seasonal special</h2>
-							<br><p><b> Gift your near and dear ones our seasonal specialties</b> </p>
-							<a href="index.html" class="view">view all</a>
+							<br /><p><b> Gift your near and dear ones our seasonal specialties</b> </p>
+							<a href="product_seasonal.aspx" class="view">view all</a>
 						</div>
 						<img src="images/pastries.jpg" alt="Image" />
+					</div>
+				</li>
+                <li>
+					<div>
+						<div>
+							<h2>Toasts</h2>
+							<br /><p><b>Launching Soon ...... </b></p>
+							<a href="index.aspx" class="view">view all</a>
+						</div>
+						<img src="images/cakes.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
@@ -106,7 +106,7 @@
 							<p></p>
 							
 						</div>
-						<img src="images/healthy-food.jpg" alt="Image" /></a>
+						<img src="images/healthy-food.jpg" alt="Image" />
 					</div>
 				</li>
 			</ul>

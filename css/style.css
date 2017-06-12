@@ -416,7 +416,7 @@ p a {
 
 #content div ul li {
 	float: left;
-	height: 220px;
+	height: auto;
 	width: 450px;
 }
 
@@ -806,7 +806,7 @@ p a {
 }
 
 #content div#blog div#sidebar div {
-	background: url(../images/sidebar-separator.gif) no-repeat center bottom;
+	//background: url(../images/sidebar-separator.gif) no-repeat center bottom;
 	padding-right: 0;
 	padding-bottom: 15px;
 	width: auto;

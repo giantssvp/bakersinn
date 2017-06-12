@@ -16,6 +16,29 @@
 	<!--[if IE 6]>
 		<link rel="stylesheet" type="text/css" href="css/ie6.css" />
 	<![endif]-->
+
+    <style type="text/css">  
+      html, body, #canvasMap {  
+        height: 400px; 
+      } 
+    </style> 
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBiZbK_ycQUlATsTiFMzbpGF50zSFgfSfg"></script>  
+    <script type="text/javascript">  
+        var map;  
+        function LoadGoogleMAP() {  
+            var SetmapOptions = {  
+                zoom: 20,  
+                center: new google.maps.LatLng(18.5123048, 73.86933513), 
+                zoomControl: true
+            };  
+            map = new google.maps.Map(document.getElementById('canvasMap'),  
+      SetmapOptions);  
+        }  
+  
+        google.maps.event.addDomListener(window, 'load', LoadGoogleMAP);  
+  
+    </script> 
 </head>
 <body>
 	<div id="header">
@@ -47,8 +70,7 @@
 	</div>
 	<div id="content">
 		<div id="about">
-			<div class="section">
-									
+			<div class="section">									
 				<div>
 					<h3>Address</h3>
 					<p> BAKER'S INN <br /> SHOP NO.1, ISHA CHAMBER, <br /> 853 BHAWANI PETH, <br /> PUNE - 411042 </p>
@@ -58,14 +80,12 @@
 				</div>
 			</div>
 			<div class="section">
-				
-				<div>
-				<h3>Google Map</h3><br />
-                    <a href="https://www.google.co.in/maps/place/Baker's+Inn/@18.5127483,73.8689691,19z/data=!4m8!1m2!2m1!1sbakersinn+pune!3m4!1s0x3bc2c0416cdd41f5:0x541350d3dd60d3d5!8m2!3d18.5123048!4d73.869329?hl=en" target="_blank"><img src="images/google_map3.jpg" alt="Image"/></a>
-				</div>
+				<div id="canvasMap" style="width:400px; align-self:flex-start" > </div>
 			</div>
 		</div>
 	</div>
+        
+
 	<div id="footer">		
 		<div id="navigation">
 			<div>

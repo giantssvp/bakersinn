@@ -416,7 +416,7 @@ p a {
 
 #content div ul li {
 	float: left;
-	height: 220px;
+	height: auto;
 	width: 450px;
 }
 

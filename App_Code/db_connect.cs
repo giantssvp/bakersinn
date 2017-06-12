@@ -111,6 +111,34 @@ public class db_connect
         }
     }
 
+    //Insert statement
+    public Boolean Login(string name, string password)
+    {
+        
+        MySqlDataReader rdr;
+        
+        string query = "select * from login where username = @name and password = @password";
+       
+        //open connection
+        if (this.OpenConnection() == true)
+        {
+            //create command and assign the query and connection from the constructor
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@password", password);
+
+            rdr = cmd.ExecuteReader();
+            
+            if (rdr.Read())
+            {
+                this.CloseConnection();
+                return true;
+            }
+       }
+        this.CloseConnection();
+        return false;
+    }
+
     //Update statement
     public void Update()
     {
@@ -146,6 +174,60 @@ public class db_connect
             this.CloseConnection();
         }
     }
+
+
+    //Select Feedback
+    //Select statement
+    public List<string>[] SelectFeedback()
+    {
+        string query = "SELECT * FROM feedback";
+
+        //Create a list to store the result
+        List<string>[] list = new List<string>[7];
+        list[0] = new List<string>();
+        list[1] = new List<string>();
+        list[2] = new List<string>();
+        list[3] = new List<string>();
+        list[4] = new List<string>();
+        list[5] = new List<string>();
+        list[6] = new List<string>();
+        
+
+        //Open connection
+        if (this.OpenConnection() == true)
+        {
+            //Create Command
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            //Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            //Read the data and store them in the list
+            while (dataReader.Read())
+            {
+                list[0].Add(dataReader["ID"] + "");
+                list[1].Add(dataReader["Name"] + "");
+                list[2].Add(dataReader["Email_id"] + "");
+                list[3].Add(dataReader["Subject"] + "");
+                list[4].Add(dataReader["Message"] + "");
+                list[5].Add(dataReader["Status"] + "");
+                list[6].Add(dataReader["Date"] + "");
+            }
+
+            //close Data Reader
+            dataReader.Close();
+
+            //close Connection
+            this.CloseConnection();
+
+            //return list to be displayed
+            return list;
+        }
+        else
+        {
+            return list;
+        }
+    }
+
 
     //Select statement
     public List<string>[] Select()

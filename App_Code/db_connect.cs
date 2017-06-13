@@ -7,40 +7,11 @@ using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-/// <summary>
-/// Summary description for db_connect
-/// </summary>
 public class db_connect
 {
     private MySqlConnection connection;
     public List<string>[] list_feedback_show = new List<string>[3];
-
-    /*
-    public db_connect()
-    {
-        this.OpenConnection();
-
-        //this.Insert();
-        MySqlCommand cmd = new MySqlCommand("select * from feedback", connection);
-        MySqlDataReader rdr;
-        rdr = cmd.ExecuteReader();
-        while (rdr.Read())
-        {
-            message.InnerText = rdr.GetString(1);
-        }
-        
-        List<string>[] list = new List<string>[3];
-        list = this.Select();
-        string dogCsv = string.Join(",", list[0]);
-
-        MessageBox.Show(dogCsv);
-        MessageBox.Show(list.Count().ToString());
-        
-
-        this.CloseConnection();
-    }
-    */
-
+    
     private bool OpenConnection()
     {
         string connetionString = null;
@@ -230,11 +201,23 @@ public class db_connect
         }
     }
 
+    public int feedback_count()
+    {
+        int count = 0;
+        string query = "select count(id) from bakersinn.feedback where Status = 1";
+        if (this.OpenConnection() == true)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+            this.CloseConnection();
+        }
+        return count;
+    }
 
     //Select statement
-    public List<string>[] feedback_show()
+    public List<string>[] feedback_show(int offset)
     {
-        string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC LIMIT 2 OFFSET 0";
+        string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC LIMIT 2 OFFSET @offset";
 
         //Create a list to store the result
         list_feedback_show[0] = new List<string>();
@@ -246,6 +229,7 @@ public class db_connect
         {
             //Create Command
             MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@offset", offset);
             //Create a data reader and Execute the command
             MySqlDataReader dataReader = cmd.ExecuteReader();
 
@@ -270,64 +254,5 @@ public class db_connect
         {
             return list_feedback_show;
         }
-    }
-
-    //Select statement
-    public List<string>[] Select()
-    {
-        string query = "SELECT * FROM emp";
-
-        //Create a list to store the result
-        List<string>[] list = new List<string>[3];
-        list[0] = new List<string>();
-        list[1] = new List<string>();
-        list[2] = new List<string>();
-
-        //Open connection
-        if (this.OpenConnection() == true)
-        {
-            //Create Command
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-            //Create a data reader and Execute the command
-            MySqlDataReader dataReader = cmd.ExecuteReader();
-
-            //Read the data and store them in the list
-            while (dataReader.Read())
-            {
-                list[0].Add(dataReader["emp_id"] + "");
-                list[1].Add(dataReader["emp_name"] + "");
-                list[2].Add(dataReader["emp_age"] + "");
-            }
-
-            //close Data Reader
-            dataReader.Close();
-
-            //close Connection
-            this.CloseConnection();
-
-            //return list to be displayed
-            return list;
-        }
-        else
-        {
-            return list;
-        }
-    }
-    /*private void button1_Click(object sender, EventArgs e)
-    {
-        string connetionString = null;
-        MySqlConnection cnn;
-        connetionString = "server=192.168.56.101;database=bakersinn;uid=root;pwd=password;";
-        cnn = new MySqlConnection(connetionString);
-        try
-        {
-            cnn.Open();
-            MessageBox.Show("Connection Open ! ");
-            cnn.Close();
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show("Can not open connection ! ");
-        }
-        }*/
+    }    
 }

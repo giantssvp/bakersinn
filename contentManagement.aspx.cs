@@ -25,10 +25,10 @@ public partial class contentManagement : System.Web.UI.Page
             }
         } */
     }
-    protected void feedback_approve_button_Click(object sender, CommandEventArgs e)
+    protected void feedback_approve_button_Click(object sender, EventArgs e)
     {
-        string value = e.CommandArgument.ToString();
-        MessageBox.Show(value);
+        //string value = e.CommandArgument.ToString();
+        //MessageBox.Show(value);
         var db_obj = new db_connect();
         int result;
         //result = db_obj.ApproveFeedback();

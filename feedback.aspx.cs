@@ -34,7 +34,7 @@ public partial class feedback : System.Web.UI.Page
 
         int cnt = db_obj.feedback_count();
         
-        if (Int32.Parse(Session["offset"].ToString()) <= (cnt-2))
+        if (Int32.Parse(Session["offset"].ToString()) < (cnt-2))
             Session["offset"] = Int32.Parse(Session["offset"].ToString()) + 2;
         else
             if (cnt % 2 == 0)
@@ -42,6 +42,25 @@ public partial class feedback : System.Web.UI.Page
             else
                 Session["offset"] = cnt - 1;
         
+        list = db_obj.feedback_show(Int32.Parse(Session["offset"].ToString()));
+        total = list[0].Count();
+    }
+
+    protected void last_Click(object sender, EventArgs e)
+    {
+        DataBind();
+        var db_obj = new db_connect();
+
+        int cnt = db_obj.feedback_count();
+
+        if (cnt > 0)
+        {
+            if (cnt % 2 == 0)
+                Session["offset"] = cnt - 2;
+            else
+                Session["offset"] = cnt - 1;
+        }
+
         list = db_obj.feedback_show(Int32.Parse(Session["offset"].ToString()));
         total = list[0].Count();
     }
@@ -58,6 +77,14 @@ public partial class feedback : System.Web.UI.Page
 
         var db_obj = new db_connect();
         list = db_obj.feedback_show(Int32.Parse(Session["offset"].ToString()));
+        total = list[0].Count();
+    }
+
+    protected void first_Click(object sender, EventArgs e)
+    {
+        DataBind();
+        var db_obj = new db_connect();
+        list = db_obj.feedback_show(0);
         total = list[0].Count();
     }
 }

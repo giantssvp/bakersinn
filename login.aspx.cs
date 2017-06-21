@@ -10,14 +10,13 @@ public partial class login : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
     }
 
     protected void login_button_Click(object sender, EventArgs e)
     {
         var db_obj = new db_connect();
-        var result = db_obj.Login(uname.Value, psw.Value);
-        uname.Value = psw.Value = "";
+        var result = db_obj.Login(username.Value, password.Value);
+        username.Value = password.Value = "";
         if (result == true)
         {
             Response.Redirect("/contentManagement.aspx");

@@ -34,13 +34,15 @@
         <td><%=list[4][i]%></td>
         <td><%=list[5][i]%></td>
         <td><%=list[6][i]%></td>
-        <!--<td> 
-            <input type="submit" id="approve_button" value="Approve" class="submit" runat="server" onserverclick="feedback_approve_button_Click" /> 
-            
         
+        <td> 
+            <input type="text" id='myTxt' value="test" runat="server"/> 
+        </td>
+        <td> 
+            <input type="submit" id="approve_button" value="Approve" class="submit" runat="server" onserverclick="feedback_approve_button_Click" /> 
         </td>
         <td><input type="submit" id="delete_button" value="Delete" class="submit" runat="server" onserverclick="feedback_delete_button_Click" /></td>
-        -->
+        
     </tr>
     <%} %>
 </table>

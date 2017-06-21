@@ -153,7 +153,7 @@ public class db_connect
     //Select statement
     public List<string>[] SelectFeedback()
     {
-        string query = "SELECT * FROM feedback";
+        string query = "SELECT * FROM feedback where Status = 0";
 
         //Create a list to store the result
         List<string>[] list = new List<string>[7];

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -27,16 +28,24 @@ public partial class contentManagement : System.Web.UI.Page
     }
     protected void feedback_approve_button_Click(object sender, EventArgs e)
     {
-        //string value = e.CommandArgument.ToString();
-        //MessageBox.Show(value);
+        MessageBox.Show("approve");
+        string value = txtDesc2.Value;
+        string num = Regex.Match(value, @"\d+").Value;
+        MessageBox.Show(num);
+        int feedback_id = Int32.Parse(num);
         var db_obj = new db_connect();
         int result;
         //result = db_obj.ApproveFeedback();
-
     }
+    
     protected void feedback_delete_button_Click(object sender, EventArgs e)
     {
         int result;
+        MessageBox.Show("delete");
+        string value = txtDesc2.Value;
+        string num = Regex.Match(value, @"\d+").Value;
+        MessageBox.Show(num);
+        int feedback_id = Int32.Parse(num);
         var db_obj = new db_connect();
         //result = db_obj.DeleteFeedback();
     }

@@ -15,28 +15,20 @@ public class db_connect
     private bool OpenConnection()
     {
         string connetionString = null;
-        //MySqlConnection connection;
         connetionString = "server=localhost;database=bakersinn;uid=root;pwd=password;Allow User Variables=True;";
         connection = new MySqlConnection(connetionString);
         try
         {
             connection.Open();
-            //MessageBox.Show("Connection Open ! ");
             return true;
         }
         catch (MySqlException ex)
         {
-            //When handling errors, you can your application's response based 
-            //on the error number.
-            //The two most common error numbers when connecting are as follows:
-            //0: Cannot connect to server.
-            //1045: Invalid user name and/or password.
             switch (ex.Number)
             {
                 case 0:
                     MessageBox.Show("Cannot connect to server.  Contact administrator");
                     break;
-
                 case 1045:
                     MessageBox.Show("Invalid username/password, please try again");
                     break;
@@ -45,7 +37,6 @@ public class db_connect
         }
     }
 
-    //Close connection
     private bool CloseConnection()
     {
         try
@@ -60,15 +51,12 @@ public class db_connect
         }
     }
 
-    //Insert statement
     public void Insert(string name, string email, string sub, string msg)
     {
         string query = "INSERT INTO feedback (Name, Email_id, Subject, Message, Status, Date) VALUES(@name, @email, @sub, @msg, @sts, CURDATE())";
 
-        //open connection
         if (this.OpenConnection() == true)
         {
-            //create command and assign the query and connection from the constructor
             MySqlCommand cmd = new MySqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@email", email);
@@ -76,32 +64,23 @@ public class db_connect
             cmd.Parameters.AddWithValue("@msg", msg);
             cmd.Parameters.AddWithValue("@sts", false);
 
-            //Execute command
             cmd.ExecuteNonQuery();
-
-            //close connection
             this.CloseConnection();
         }
     }
 
-    //Insert statement
     public Boolean Login(string name, string password)
     {
-        
         MySqlDataReader rdr;
-        
         string query = "select * from login where username = @name and password = @password";
        
-        //open connection
         if (this.OpenConnection() == true)
         {
-            //create command and assign the query and connection from the constructor
             MySqlCommand cmd = new MySqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@name", name);
             cmd.Parameters.AddWithValue("@password", password);
 
-            rdr = cmd.ExecuteReader();
-            
+            rdr = cmd.ExecuteReader();           
             if (rdr.Read())
             {
                 this.CloseConnection();
@@ -112,50 +91,38 @@ public class db_connect
         return false;
     }
 
-    //Update statement
-    public void Update()
+    public void ApproveFeedback(int id)
     {
-        string query = "UPDATE feedback SET status='true' WHERE id=12";
+        string query = "UPDATE feedback SET status=1 WHERE id=@id";
 
-        //Open connection
         if (this.OpenConnection() == true)
         {
-            //create mysql command
             MySqlCommand cmd = new MySqlCommand();
-            //Assign the query using CommandText
+            cmd.Parameters.AddWithValue("@id", id);
             cmd.CommandText = query;
-            //Assign the connection using Connection
             cmd.Connection = connection;
 
-            //Execute query
             cmd.ExecuteNonQuery();
-
-            //close connection
             this.CloseConnection();
         }
     }
 
-    //Delete statement
-    public void Delete()
+    public void DeleteFeedback(int id)
     {
-        string query = "DELETE FROM emp WHERE emp_name='John Smith'";
-
+        string query = "DELETE FROM feedback WHERE id=@id";
         if (this.OpenConnection() == true)
         {
             MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@id", id);
             cmd.ExecuteNonQuery();
             this.CloseConnection();
         }
     }
 
-
-    //Select Feedback
-    //Select statement
     public List<string>[] SelectFeedback()
     {
-        string query = "SELECT * FROM feedback where Status = 0";
+        string query = "SELECT * FROM feedback where Status = 0 ORDER BY Date DESC";
 
-        //Create a list to store the result
         List<string>[] list = new List<string>[7];
         list[0] = new List<string>();
         list[1] = new List<string>();
@@ -165,16 +132,11 @@ public class db_connect
         list[5] = new List<string>();
         list[6] = new List<string>();
         
-
-        //Open connection
         if (this.OpenConnection() == true)
         {
-            //Create Command
             MySqlCommand cmd = new MySqlCommand(query, connection);
-            //Create a data reader and Execute the command
             MySqlDataReader dataReader = cmd.ExecuteReader();
 
-            //Read the data and store them in the list
             while (dataReader.Read())
             {
                 list[0].Add(dataReader["ID"] + "");
@@ -186,13 +148,8 @@ public class db_connect
                 list[6].Add(dataReader["Date"] + "");
             }
 
-            //close Data Reader
             dataReader.Close();
-
-            //close Connection
             this.CloseConnection();
-
-            //return list to be displayed
             return list;
         }
         else
@@ -200,7 +157,7 @@ public class db_connect
             return list;
         }
     }
-
+   
     public int feedback_count()
     {
         int count = 0;
@@ -214,26 +171,20 @@ public class db_connect
         return count;
     }
 
-    //Select statement
     public List<string>[] feedback_show(int offset)
     {
         string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC LIMIT 2 OFFSET @offset";
 
-        //Create a list to store the result
         list_feedback_show[0] = new List<string>();
         list_feedback_show[1] = new List<string>();
         list_feedback_show[2] = new List<string>();
 
-        //Open connection
         if (this.OpenConnection() == true)
         {
-            //Create Command
             MySqlCommand cmd = new MySqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@offset", offset);
-            //Create a data reader and Execute the command
             MySqlDataReader dataReader = cmd.ExecuteReader();
 
-            //Read the data and store them in the list
             while (dataReader.Read())
             {
                 list_feedback_show[0].Add(dataReader["Subject"] + "");
@@ -241,13 +192,8 @@ public class db_connect
                 list_feedback_show[2].Add(dataReader["Date"] + "");
             }
 
-            //close Data Reader
             dataReader.Close();
-
-            //close Connection
             this.CloseConnection();
-
-            //return list to be displayed
             return list_feedback_show;
         }
         else

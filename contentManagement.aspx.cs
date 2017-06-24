@@ -17,36 +17,24 @@ public partial class contentManagement : System.Web.UI.Page
         var db_obj = new db_connect();
         list = db_obj.SelectFeedback();
         row_count = list[0].Count;
-        /*
-        for (int i = 0; i < list.Count(); i++) {
-            for (int j = 0; j < (list[i].Count()); i++)
-            {
-
-                MessageBox.Show(list[i][j]);
-            }
-        } */
     }
     protected void feedback_approve_button_Click(object sender, EventArgs e)
     {
-        MessageBox.Show("approve");
         string value = txtDesc2.Value;
         string num = Regex.Match(value, @"\d+").Value;
-        MessageBox.Show(num);
         int feedback_id = Int32.Parse(num);
         var db_obj = new db_connect();
-        int result;
-        //result = db_obj.ApproveFeedback();
+        db_obj.ApproveFeedback(feedback_id);
+        Page_Load(sender, e);
     }
     
     protected void feedback_delete_button_Click(object sender, EventArgs e)
     {
-        int result;
-        MessageBox.Show("delete");
         string value = txtDesc2.Value;
         string num = Regex.Match(value, @"\d+").Value;
-        MessageBox.Show(num);
         int feedback_id = Int32.Parse(num);
         var db_obj = new db_connect();
-        //result = db_obj.DeleteFeedback();
+        db_obj.DeleteFeedback(feedback_id);
+        Page_Load(sender, e);
     }
 }

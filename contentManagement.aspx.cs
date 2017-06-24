@@ -20,7 +20,7 @@ public partial class contentManagement : System.Web.UI.Page
     }
     protected void feedback_approve_button_Click(object sender, EventArgs e)
     {
-        string value = txtDesc2.Value;
+        string value = hdn_textbox.Value;
         string num = Regex.Match(value, @"\d+").Value;
         int feedback_id = Int32.Parse(num);
         var db_obj = new db_connect();
@@ -30,7 +30,7 @@ public partial class contentManagement : System.Web.UI.Page
     
     protected void feedback_delete_button_Click(object sender, EventArgs e)
     {
-        string value = txtDesc2.Value;
+        string value = hdn_textbox.Value;
         string num = Regex.Match(value, @"\d+").Value;
         int feedback_id = Int32.Parse(num);
         var db_obj = new db_connect();

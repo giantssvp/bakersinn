@@ -76,9 +76,9 @@
             <%} %>
         </table>
         
-        <input id="txtDesc2" name="txtDesc2" runat="server" type="text" hidden/> 
-        <input type="submit" id="approve_btn" name="approve_btn" value="Approve" runat="server" onserverclick="feedback_approve_button_Click" hidden/>
-        <input type="submit" id="delete_btn" name="delete_btn" value="Delete" runat="server" onserverclick="feedback_delete_button_Click" hidden/>
+        <input id="hdn_textbox" name="hdn_textbox" runat="server" type="text" hidden/> 
+        <input type="submit" id="hdn_approve_btn" name="hdn_approve_btn" value="Approve" runat="server" onserverclick="feedback_approve_button_Click" hidden/>
+        <input type="submit" id="hdn_delete_btn" name="hdn_delete_btn" value="Delete" runat="server" onserverclick="feedback_delete_button_Click" hidden/>
     </form>
 
             <!-- /#wrap -->
@@ -90,14 +90,14 @@
     <script type="text/javascript">
         function approve(val)
         {
-            document.getElementById("txtDesc2").value = val.value;
-            document.getElementById('approve_btn').click();
+            document.getElementById("hdn_textbox").value = val.value;
+            document.getElementById('hdn_approve_btn').click();
         }
 
         function delete1(val)
         {
-            document.getElementById("txtDesc2").value = val.value;
-            document.getElementById('delete_btn').click();
+            document.getElementById("hdn_textbox").value = val.value;
+            document.getElementById('hdn_delete_btn').click();
         }
     </script>
 </body>

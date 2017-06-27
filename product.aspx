@@ -36,7 +36,7 @@
 				<li><a href="index.aspx">Home</a></li>
 				<li class="current"><a href="product.aspx">Product Details</a></li>
 				<li><a href="about.aspx">About us</a></li>
-				<li><a href="gallery.aspx">Gallery</a></li>
+				<li><a href="gallery.aspx">gallery</a></li>
 				<li><a href="feedback.aspx">Feedback</a></li>
 				<li><a href="contact.aspx">Contact Us</a></li>
 			</ul>
@@ -94,7 +94,7 @@
 						<div>
 							<h2>Toasts</h2>
 							<br /><p><b>Launching Soon ...... </b></p>
-							<a href="index.aspx" class="view">view all</a>
+							<a href="#" class="view">view all</a>
 						</div>
 						<img src="images/cakes.jpg" alt="Image" />
 					</div>

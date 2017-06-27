@@ -36,7 +36,7 @@
 				<li><a href="index.aspx">Home</a></li>
 				<li><a href="product.aspx">Product Details</a></li>
 				<li class="current"><a href="about.aspx">About us</a></li>
-				<li><a href="gallery.aspx">Gallery</a></li>
+				<li><a href="gallery.aspx">gallery</a></li>
 				<li><a href="feedback.aspx">Feedback</a></li>
 				<li><a href="contact.aspx">Contact Us</a></li>
 			</ul>

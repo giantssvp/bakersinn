@@ -17,6 +17,10 @@
 		<link rel="stylesheet" type="text/css" href="css/ie6.css" />
 	<![endif]-->
 </head>
+    <link rel="stylesheet" type="text/css" href="css/w3.css" />
+<style>  
+.mySlides {display:none;}
+</style>
 <body>
 	<div id="header">
 		<div>
@@ -36,7 +40,7 @@
 				<li class="current"><a href="index.aspx">Home</a></li>
 				<li><a href="product.aspx">Product Details</a></li>
 				<li><a href="about.aspx">About us</a></li>
-				<li><a href="gallery.aspx">Gallery</a></li>
+				<li><a href="gallery.aspx">gallery</a></li>
 				<li><a href="feedback.aspx">Feedback</a></li>
 				<li><a href="contact.aspx">Contact Us</a></li>
 			</ul>
@@ -50,7 +54,10 @@
 					
 					<li><a href="index.aspx">other</a></li>
 				</ul>
-				<a href="index.aspx"><img src="images/wedding-cupcakes-large.jpg" alt="Image"/></a>
+                    <a href="index.aspx"><img class="mySlides" src="images/wedding-cupcakes-large.jpg" style="width:73%"/></a>
+				    <img class="mySlides" src="images/cakes/Choco_walnut.jpg" style="width:73%" />  
+					<img class="mySlides" src="images/wedding-cupcakes-large-bk.jpg" style="width:73%" />
+					<img class="mySlides" src="images/cakes/Fruit.jpg" style="width:73%" />
 			</div>
 		</div>
 	</div>
@@ -99,5 +106,22 @@
 			</div>
 		</div>
 	</div>
+
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>	
 </body>
 </html>

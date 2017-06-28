@@ -10,6 +10,7 @@ public partial class login : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["offset_login"] = 0;
     }
 
     protected void login_button_Click(object sender, EventArgs e)

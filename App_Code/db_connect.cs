@@ -119,9 +119,9 @@ public class db_connect
         }
     }
 
-    public List<string>[] SelectFeedback()
+    public List<string>[] SelectFeedback(int offset)
     {
-        string query = "SELECT * FROM feedback where Status = 0 ORDER BY Date DESC";
+        string query = "SELECT * FROM feedback where Status = 0 ORDER BY Date DESC LIMIT 5 OFFSET @offset";
 
         List<string>[] list = new List<string>[7];
         list[0] = new List<string>();
@@ -135,6 +135,7 @@ public class db_connect
         if (this.OpenConnection() == true)
         {
             MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@offset", offset);
             MySqlDataReader dataReader = cmd.ExecuteReader();
 
             while (dataReader.Read())
@@ -158,13 +159,14 @@ public class db_connect
         }
     }
    
-    public int feedback_count()
+    public int feedback_count(int status)
     {
         int count = 0;
-        string query = "select count(id) from bakersinn.feedback where Status = 1";
+        string query = "select count(id) from bakersinn.feedback where Status = @status";
         if (this.OpenConnection() == true)
         {
             MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@status", status);
             count = Convert.ToInt32(cmd.ExecuteScalar());
             this.CloseConnection();
         }

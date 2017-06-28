@@ -32,7 +32,7 @@ public partial class feedback : System.Web.UI.Page
         DataBind();
         var db_obj = new db_connect();
 
-        int cnt = db_obj.feedback_count();
+        int cnt = db_obj.feedback_count(1);
         
         if (Int32.Parse(Session["offset"].ToString()) < (cnt-2))
             Session["offset"] = Int32.Parse(Session["offset"].ToString()) + 2;
@@ -51,7 +51,7 @@ public partial class feedback : System.Web.UI.Page
         DataBind();
         var db_obj = new db_connect();
 
-        int cnt = db_obj.feedback_count();
+        int cnt = db_obj.feedback_count(1);
 
         if (cnt > 0)
         {

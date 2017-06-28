@@ -15,26 +15,105 @@ public partial class contentManagement : System.Web.UI.Page
     {
         DataBind();
         var db_obj = new db_connect();
-        list = db_obj.SelectFeedback();
+        list = db_obj.SelectFeedback(0);
         row_count = list[0].Count;
     }
+
     protected void feedback_approve_button_Click(object sender, EventArgs e)
     {
-        string value = hdn_textbox.Value;
-        string num = Regex.Match(value, @"\d+").Value;
-        int feedback_id = Int32.Parse(num);
+        var c_id = Request.Form["approve"].ToString();
+        int feedback_id = -1;
+        string[] values = c_id.Split(',');
         var db_obj = new db_connect();
-        db_obj.ApproveFeedback(feedback_id);
+        for (int i = 0; i < values.Length; i++)
+        {
+            values[i] = values[i].Trim();
+            feedback_id = Int32.Parse(values[i]);
+            db_obj.ApproveFeedback(feedback_id);
+        }
         Page_Load(sender, e);
     }
     
     protected void feedback_delete_button_Click(object sender, EventArgs e)
     {
-        string value = hdn_textbox.Value;
-        string num = Regex.Match(value, @"\d+").Value;
-        int feedback_id = Int32.Parse(num);
+        var c_id = Request.Form["approve"].ToString();
+        int feedback_id = -1;
+        string[] values = c_id.Split(',');
         var db_obj = new db_connect();
-        db_obj.DeleteFeedback(feedback_id);
+        for (int i = 0; i < values.Length; i++)
+        {
+            values[i] = values[i].Trim();
+            feedback_id = Int32.Parse(values[i]);
+            db_obj.DeleteFeedback(feedback_id);
+        }
         Page_Load(sender, e);
+    }
+
+    protected void pagination_first_button_Click(object sender, EventArgs e)
+    {
+        DataBind();
+        var db_obj = new db_connect();
+        list = db_obj.SelectFeedback(0);
+        row_count = list[0].Count;
+    }
+
+    protected void pagination_last_button_Click(object sender, EventArgs e)
+    {
+        DataBind();
+        var db_obj = new db_connect();
+
+        int cnt = db_obj.feedback_count(0);
+
+        int rem = cnt % 5;
+        if (rem == 0)
+            Session["offset_login"] = cnt - 5;
+        else
+            Session["offset_login"] = cnt - rem;
+
+        list = db_obj.SelectFeedback(Int32.Parse(Session["offset_login"].ToString()));
+        row_count = list[0].Count();
+    }
+
+    protected void pagination_next_button_Click(object sender, EventArgs e)
+    {
+        DataBind();
+        int rem = -1;
+        var db_obj = new db_connect();
+
+        int cnt = db_obj.feedback_count(0);
+        if (cnt > 0)
+        {
+            if (Int32.Parse(Session["offset_login"].ToString()) < cnt - 5)
+            {
+                Session["offset_login"] = Int32.Parse(Session["offset_login"].ToString()) + 5;
+            }
+            else
+            {
+                rem = cnt % 5;
+                if (rem == 0)
+                    Session["offset_login"] = cnt - 5;
+                else
+                    Session["offset_login"] = cnt - rem;
+            }
+        }
+
+        list = db_obj.SelectFeedback(Int32.Parse(Session["offset_login"].ToString()));
+        row_count = list[0].Count();
+    }
+
+    protected void pagination_previous_button_Click(object sender, EventArgs e)
+    {
+        DataBind();
+        var db_obj = new db_connect();
+
+        int cnt = db_obj.feedback_count(0);
+
+        if (Int32.Parse(Session["offset_login"].ToString()) > 5)
+            Session["offset_login"] = Int32.Parse(Session["offset_login"].ToString()) - 5;
+        else
+            Session["offset_login"] = 0;
+
+        list = db_obj.SelectFeedback(Int32.Parse(Session["offset_login"].ToString()));
+        row_count = list[0].Count();
     }
 }

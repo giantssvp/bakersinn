@@ -31,13 +31,7 @@
                     </header>
                     <!--<div class="topnav">
                     </div>-->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <!-- .nav -->
-                        <ul class="nav navbar-nav">
-                            <li><a href="">Admin</a></li>
-                        </ul>
-                        <!-- /.nav -->
-                    </div>
+                    
                 </div>
                     <!-- /.container-fluid -->
             <!-- </nav>
@@ -48,8 +42,19 @@
     </div>
 
     <form id="form1" runat="server">
-        <table border="1" width="100%">
+        <div align="center" style="width:90%; float:left;">
+            <input type="submit" id="Submit1" name="hdn_approve_btn" value="Approve" runat="server" onserverclick="feedback_approve_button_Click"/>
+            <input type="submit" id="Submit2" name="hdn_delete_btn" value="Delete" runat="server" onserverclick="feedback_delete_button_Click"/>
+            <div align="right" style="width:10%; float:right;"> 
+                <a runat="server" onserverclick="pagination_first_button_Click"> << </a> &nbsp;&nbsp;&nbsp;
+                <a runat="server" onserverclick="pagination_previous_button_Click"> < </a> &nbsp;&nbsp;&nbsp;
+                <a runat="server" onserverclick="pagination_next_button_Click"> > </a> &nbsp;&nbsp;&nbsp;
+                <a runat="server" onserverclick="pagination_last_button_Click"> >> </a>
+            </div>
+        </div>
+        <table border="1" width="95%">
             <tr>
+                <th>Select</th>
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
@@ -57,30 +62,36 @@
                 <th>Message</th>
                 <th>Status</th>
                 <th>Date</th>
-                <th>Approve</th>
-                <th>Delete</th>
             </tr>  
    
             <%for (int i = 0; i < row_count; i++) { %>
                 <tr>
+                    <td><input type="checkbox" name="approve" value="<% =list[0][i] %>"/> </td>
                     <td><%=list[0][i]%></td>
                     <td><%=list[1][i]%></td>
                     <td><%=list[2][i]%></td>
                     <td><%=list[3][i]%></td>
                     <td><%=list[4][i]%></td>
                     <td><%=list[5][i]%></td>
-                    <td><%=list[6][i]%></td>        
-                    <td><input type="button" id="Approve<% =list[0][i] %>" value="Approve<% =list[0][i] %>" onclick="approve(this)" /></td>
-                    <td><input type="button" id="Delete<% =list[0][i] %>" value="Delete<% =list[0][i] %>" onclick="delete1(this)" /></td>        
+                    <td><%=list[6][i]%></td>
                 </tr>
             <%} %>
         </table>
         
-        <input id="hdn_textbox" name="hdn_textbox" runat="server" type="text" hidden/> 
-        <input type="submit" id="hdn_approve_btn" name="hdn_approve_btn" value="Approve" runat="server" onserverclick="feedback_approve_button_Click" hidden/>
-        <input type="submit" id="hdn_delete_btn" name="hdn_delete_btn" value="Delete" runat="server" onserverclick="feedback_delete_button_Click" hidden/>
-    </form>
+        <!--<div align="center">
+            <input type="submit" id="hdn_approve_btn" name="hdn_approve_btn" value="Approve" runat="server" onserverclick="feedback_approve_button_Click"/>
+            <input type="submit" id="hdn_delete_btn" name="hdn_delete_btn" value="Delete" runat="server" onserverclick="feedback_delete_button_Click"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <<&nbsp;&nbsp;&nbsp;&nbsp;<&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;>>
+        
+        </div>-->
 
+        
+        
+    </form>
+    
             <!-- /#wrap -->
             <footer class="Footer bg-dark dker">
                 <p>Copyright &copy; 2017 bakersinn All rights reserved</p>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="gallery.aspx.cs" Inherits="gallery1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="gallery.aspx.cs" Inherits="gallery" EnableEventValidation="false" %>
 
 <!DOCTYPE html>
 
@@ -31,13 +31,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 				<div id="logo">
 					<a href="index.aspx"><img src="images/logo.jpg" alt="Logo"/></a>
 				</div>
-				<div>
-					
-					<form action="#">
-						<input type="text" id="search" maxlength="30" />
-						<input type="submit" value="" id="searchbtn" />
-					</form>
-				</div>
 			</div>
 			<ul>
 				<li><a href="index.aspx">Home</a></li>
@@ -52,75 +45,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 			</div>
 		</div>
 	</div>
-	<!--<div id="content"> -->
-		<!-- !PAGE CONTENT! -->
+	
+    <div class="w3-main w3-content w3-padding" style="max-width:900px;margin-top:10px">
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    
+            <%for (int i = 0; i < row_count; i++) { %>
+                <div class="w3-quarter">
+                    <img src="<% =list[1][i] %>" alt="Sandwich" style="width:100%" />
+                    <h4><% =list[0][i] %></h4>
+                </div>
+            <%} %>    
+        </div>
+    
+        <form action="#" runat="server">
+            <div class="w3-center w3-padding-32">
+                <div>
+                    <a class="w3-bar-item w3-button w3-hover-black" runat="server" onserverclick="previous_button_Click"> <<  </a> &nbsp;&nbsp;&nbsp;
+                    <a class="w3-bar-item w3-button w3-hover-black" runat="server" onserverclick="next_button_Click">  >>  </a>
+                </div>
+            </div>   
+        </form>
+    </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="gallery.aspx" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="gallery1.aspx" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
- 
-<div class="w3-main w3-content w3-padding" style="max-width:900px;margin-top:10px">
-
-  <!-- First Photo Grid-->
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="images/loose_packets/coffee2.jpg" alt="Sandwich" style="width:100%">
-      <h3>Coffee Biscuits</h3>
-      <p></p>
-    </div>
-    <div class="w3-quarter">
-      <img src="images/loose_packets/fruit_nut2.jpg" alt="Steak" style="width:100%">
-      <h3>Fruit Nut Biscuits</h3>
-      <p></p>
-    </div>
-    <div class="w3-quarter">
-      <img src="images/loose_packets/ginger.jpg" alt="Cherries" style="width:100%">
-      <h3>Ginger Biscuits</h3>
-      <p></p>
-      
-    </div>
-    <div class="w3-quarter">
-      <img src="images/loose_packets/honey_almond.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Honey Almond Biscuits</h3>
-      <p></p>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="images/loose_packets/kesar_nankhatai.jpg" alt="Popsicle" style="width:100%">
-      <h3>Kesar Nankhatai Biscuits</h3>
-      <p></p>
-    </div>
-    <div class="w3-quarter">
-      <img src="images/loose_packets/coconut.jpg" alt="Salmon" style="width:100%">
-      <h3>Coconut Biscuits</h3>
-      <p></p>
-    </div>
-    <div class="w3-quarter">
-      <img src="images/loose_packets/roat.jpg" alt="Sandwich" style="width:100%">
-      <h3>Roat Biscuits</h3>
-      <p></p>
-    </div>
-    <div class="w3-quarter">
-      <img src="images/loose_packets/shrewsbury.jpg" alt="Croissant" style="width:100%">
-      <h3>Shrewsbury Biscuits</h3>
-      <p></p>
-    </div>
-  </div>
-
-<!-- End page content -->
-   </div>
-
-	<!--</div>-->
 	<div id="footer">		
 		<div id="navigation">
 			<div>
@@ -131,4 +77,3 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 	</div>
 </body>
 </html>
-

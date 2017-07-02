@@ -23,14 +23,7 @@
 			<div>
 				<div id="logo">
 					<a href="index.aspx"><img src="images/logo.jpg" alt="Logo"/></a>
-				</div>
-				<div>
-					
-					<form action="#">
-						<input type="text" id="search" maxlength="30" />
-						<input type="submit" value="" id="searchbtn" />
-					</form>
-				</div>
+				</div>				
 			</div>
 			<ul>
 				<li><a href="index.aspx">Home</a></li>

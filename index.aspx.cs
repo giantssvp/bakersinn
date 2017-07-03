@@ -10,5 +10,6 @@ public partial class index : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Session["offset"] = 0;
+        Session["offset_gallery"] = 0;
     }
 }

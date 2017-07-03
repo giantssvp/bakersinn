@@ -23,14 +23,7 @@
 			<div>
 				<div id="logo">
 					<a href="index.aspx"><img src="images/logo.jpg" alt="Logo"/></a>
-				</div>
-				<div>
-					
-					<form action="#">
-						<input type="text" id="search" maxlength="30" />
-						<input type="submit" value="" id="searchbtn" />
-					</form>
-				</div>
+				</div>				
 			</div>
 			<ul>
 				<li><a href="index.aspx">Home</a></li>
@@ -49,29 +42,17 @@
         <div id="blog">
 			<div id="articles">
                 <ul>
-                <%for (int i = 0; i < total ; i++){%>
-                    <li>
-						<div>                            
-							<div>                                
-								<span class="date"><%=list[2][i]%> </span>								
-								<h1><a href="index.aspx"> <%=list[0][i]%> </a></h1>
-								<p><%=list[1][i]%></p>								
-							</div>
-						</div>
-					</li>
-                    <!--
-					<li>
-						<div>
-							<div>
-								<span class="date">&nbsp;&nbsp;Nov 29</span>
-								
-								<h1><a href="index.aspx">3 Day Christmas Sale on the Shop</a></h1>
-								<h2>December 3-5&#44; 2011 Crazy Discounts</h2>
-								<p>Pellentesque placerat sollicitudin metus eget euismod. Suspendisse potenti. Sed nibh augue, rutrum quis posuere quis, elementum et enim. Morbi varius varius odio ac facilisis. Pellentesque ut erat vulputate ligula elementum ultrices. Morbi tempor magna sed tellus pellentesque ac ultricies justo euismod. Proin vitae enim non eros eleifend aliquam. Morbi posuere nibh vitae sapien ultrices molestie. Vivamus elit nulla, dignissim non fringilla vel, facillisis et arcu.</p>
-								
-							</div>
-						</div>
-					</li> -->
+                    <%for (int i = 0; i < total ; i++){%>
+                        <li>
+						    <div>                            
+							    <div>                                
+								    <span class="date"><%=list[2][i]%> </span>								
+								    <h1><a href="index.aspx"> <%=list[0][i]%> </a></h1>
+								    <p><%=list[1][i]%></p>								
+							    </div>
+						    </div>
+					    </li>
+                    
                     <% } //foreach %>
 				</ul>
 				       
@@ -83,8 +64,8 @@
 			<form runat="server">
 				<input type="text" id="name" runat="server" maxlength="30" placeholder="Name" class="textcontact" />
 				<input type="text" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
-				<input type="text" id="subject" runat="server" maxlength="50" placeholder="Subject" class="textcontact" />
-				<textarea id="message" runat="server" cols="30" rows="10" maxlength="500"></textarea>
+				<input type="text" id="subject" runat="server" maxlength="50" placeholder="Subject [Required]" class="textcontact" required/>
+				<textarea id="message" runat="server" cols="30" rows="10" maxlength="500" placeholder="Message [Required]" required></textarea>
 				<input type="submit" id="submit_button" value="" class="submit" runat="server" onserverclick="submit_button_Click" />
 			</form>
 		</div>

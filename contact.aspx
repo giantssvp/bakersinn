@@ -26,14 +26,20 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBiZbK_ycQUlATsTiFMzbpGF50zSFgfSfg"></script>  
     <script type="text/javascript">  
         var map;  
+        var coordinates = { lat: 18.5123048, lng: 73.86933513 };
         function LoadGoogleMAP() {  
             var SetmapOptions = {  
-                zoom: 20,  
-                center: new google.maps.LatLng(18.5123048, 73.86933513), 
+                zoom: 20,
+                center: coordinates, 
                 zoomControl: true
             };  
             map = new google.maps.Map(document.getElementById('canvasMap'),  
-      SetmapOptions);  
+                SetmapOptions);  
+
+            var marker = new google.maps.Marker({
+                position: coordinates,
+                map: map
+            });
         }  
   
         google.maps.event.addDomListener(window, 'load', LoadGoogleMAP);  
@@ -46,13 +52,6 @@
 			<div>
 				<div id="logo">
 					<a href="index.aspx"><img src="images/logo.jpg" alt="Logo"/></a>
-				</div>
-				<div>
-					
-					<form action="#">
-						<input type="text" id="search" maxlength="30" />
-						<input type="submit" value="" id="searchbtn" />
-					</form>
 				</div>
 			</div>
 			<ul>

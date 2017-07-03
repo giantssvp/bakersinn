@@ -11,7 +11,8 @@ public class db_connect
 {
     private MySqlConnection connection;
     public List<string>[] list_feedback_show = new List<string>[3];
-    
+    public List<string>[] list_gallery_show = new List<string>[2];
+
     private bool OpenConnection()
     {
         string connetionString = null;
@@ -202,5 +203,47 @@ public class db_connect
         {
             return list_feedback_show;
         }
-    }    
+    }
+
+    public int gallery_count()
+    {
+        int count = 0;
+        string query = "select count(id) from bakersinn.gallery";
+        if (this.OpenConnection() == true)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+            this.CloseConnection();
+        }
+        return count;
+    }
+
+    public List<string>[] gallery_show(int offset)
+    {
+        string query = "SELECT * FROM gallery ORDER BY Display_name DESC LIMIT 8 OFFSET @offset";
+
+        list_gallery_show[0] = new List<string>();
+        list_gallery_show[1] = new List<string>();
+
+        if (this.OpenConnection() == true)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@offset", offset);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                list_gallery_show[0].Add(dataReader["Display_name"] + "");
+                list_gallery_show[1].Add(dataReader["Image_name"] + "");
+            }
+
+            dataReader.Close();
+            this.CloseConnection();
+            return list_gallery_show;
+        }
+        else
+        {
+            return list_gallery_show;
+        }
+    }
 }

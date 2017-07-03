@@ -24,13 +24,13 @@
 			<div class="box-header">
 				<h2>BakersINN Log In</h2>
 			</div>
-			<label for="username">Username</label>
+			<label for="username">Username <span style="color:red;">*</span></label>
 			<br/>
-			<input type="text" id="username" runat="server" />
+			<input type="text" id="username" runat="server" required/>
 			<br/>
-			<label for="password">Password</label>
+			<label for="password">Password <span style="color:red;">*</span></label>
 			<br/>
-			<input type="password" id="password" runat="server" />
+			<input type="password" id="password" runat="server" required/>
 			<br/>
 			<button type="submit" runat="server" id="login_button" value="" onserverclick="login_button_Click">Sign In</button>
 			

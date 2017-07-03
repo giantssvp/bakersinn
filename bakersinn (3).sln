@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bakersinn", "C:\Users\CEPL\Source\Repos\bakersinn\", "{47091366-8CB1-4E36-99BC-FBCFBD9FE2A2}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bakersinn", "C:\Users\CEPL\Source\Repos1\bakersinn\", "{47091366-8CB1-4E36-99BC-FBCFBD9FE2A2}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_60210"
-		Debug.AspNetCompiler.PhysicalPath = "C:\Users\CEPL\Source\Repos\bakersinn"
+		Debug.AspNetCompiler.PhysicalPath = "C:\Users\CEPL\Source\Repos1\bakersinn"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60210\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_60210"
-		Release.AspNetCompiler.PhysicalPath = "C:\Users\CEPL\Source\Repos\bakersinn"
+		Release.AspNetCompiler.PhysicalPath = "C:\Users\CEPL\Source\Repos1\bakersinn"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60210\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "60210"
-		SlnRelativePath = "C:\Users\CEPL\Source\Repos\bakersinn"
+		SlnRelativePath = "C:\Users\CEPL\Source\Repos1\bakersinn"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject

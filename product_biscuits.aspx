@@ -48,6 +48,26 @@
 	<div id="content">
 		<div>
 			<ul>
+                 <li>
+					<div>
+						<div>
+						
+							<h2>Bournvita Biscuits</h2>
+							<br><p><b>Real honey with goodness of almond makes this biscuit a perfect blend of flavors.</b> </p>
+						</div>
+						<img src="images/bisc/bournvita.jpg" alt="Image"  border="1"  />
+					</div>
+				</li>
+				<li>
+					<div>
+						<div>
+							<br>
+							<h2>Fruit Nut Biscuits</h2>
+							<br><b><p>If you love the sweet tutti fruity on your desserts then pick up fruit nut biscuit.</b></p>
+						</div>
+						<img src="images/bisc/fruit-nut.jpg" alt="Image" vspace="20" hspace="0"/>
+					</div>
+				</li>
 				<li>
 					<div>
 						<div>
@@ -195,17 +215,9 @@
 						</div>
 						<img src="images/bisc/cashewcoconut.jpg" alt="Image" hspace="20" vspace="0"/>
 				       </div>
-					   </li>
-				<li>
-					<div>
-						<div>
-							<br>
-							<h2>Fruit Nut Biscuits</h2>
-							<br><b><p>If you love the sweet tutti fruity on your desserts then pick up fruit nut biscuit.</b></p>
-						</div>
-						<img src="images/bisc/fruit-nut.jpg" alt="Image" vspace="20" hspace="0"/>
-					</div>
 				</li>
+
+               
 			</ul>
 		</div>
 	</div>

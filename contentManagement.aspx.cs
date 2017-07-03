@@ -15,8 +15,17 @@ public partial class contentManagement : System.Web.UI.Page
     {
         DataBind();
         var db_obj = new db_connect();
-        list = db_obj.SelectFeedback(0);
-        row_count = list[0].Count;
+        if (Int32.Parse(Session["login"].ToString()) == 1)
+        {
+            list = db_obj.SelectFeedback(0);
+            row_count = list[0].Count;
+        }
+        else
+        {
+            MessageBox.Show("Unauthorized Access");
+            Response.Redirect("/login.aspx");
+        }
+
     }
 
     protected void feedback_approve_button_Click(object sender, EventArgs e)

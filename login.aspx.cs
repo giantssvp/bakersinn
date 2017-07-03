@@ -11,6 +11,7 @@ public partial class login : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Session["offset_login"] = 0;
+        Session["login"] = 0;
     }
 
     protected void login_button_Click(object sender, EventArgs e)
@@ -20,10 +21,12 @@ public partial class login : System.Web.UI.Page
         username.Value = password.Value = "";
         if (result == true)
         {
+            Session["login"] = 1;
             Response.Redirect("/contentManagement.aspx");
         }
         else
         {
+            Session["login"] = 0;
             MessageBox.Show("Login Failed");
             Response.Redirect("/login.aspx");
         }

@@ -17,7 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/ie6.css" />
 	<![endif]-->
 </head>
-    <link rel="stylesheet" type="text/css" href="css/w3.css" />
+   <!-- <link rel="stylesheet" type="text/css" href="css/w3.css" /> -->
 <style>  
 .mySlides {display:none;}
 </style>

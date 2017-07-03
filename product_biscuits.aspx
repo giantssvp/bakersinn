@@ -41,26 +41,7 @@
 	<div id="content">
 		<div>
 			<ul>
-                 <li>
-					<div>
-						<div>
-						
-							<h2>Bournvita Biscuits</h2>
-							<br><p><b>Real honey with goodness of almond makes this biscuit a perfect blend of flavors.</b> </p>
-						</div>
-						<img src="images/bisc/bournvita.jpg" alt="Image"  border="1"  />
-					</div>
-				</li>
-				<li>
-					<div>
-						<div>
-							<br>
-							<h2>Fruit Nut Biscuits</h2>
-							<br><b><p>If you love the sweet tutti fruity on your desserts then pick up fruit nut biscuit.</b></p>
-						</div>
-						<img src="images/bisc/fruit-nut.jpg" alt="Image" vspace="20" hspace="0"/>
-					</div>
-				</li>
+                 
 				<li>
 					<div>
 						<div>
@@ -79,27 +60,47 @@
 							
 							<br><p><b> All coconut lovers, you can now munch on some tasty coconut cookies.</b></p>
 						</div>
-						<img src="images/bisc/coconut.jpg" alt="Image"  hspace="20" />
+						<img src="images/bisc/coconut.jpg" alt="Image"  hspace="10" />
 					</div>
 				</li>
 				<li>
 					<div>
 						<div>
-							<br>
+							
 							<h2>Mawa Roat Biscuits</h2><br>
 							<p><b>All the Roat fans taste the richness of Mawa in Roat.</b> </p>
 						</div>
-						<img src="images/bisc/mava.jpg" alt="Image"  border="1" vspace="20" />
+						<img src="images/bisc/mava.jpg" alt="Image"  border="1" vspace="10" />
 					</div>
 				</li>
 				<li>
 					<div>
 						<div>
-							<br>
-							<h2>Chocolate Cookies</h2><br>
+							
+							<h2>Chocolate Cookies</h2>
 							<p><b>The bitter-sweet taste of dark chocolate makes these cookies famous amongst chocolate lovers.</b> </p>
 						</div>
-						<img src="images/bisc/chocolate.jpg" alt="Image"  border="1" hspace="20" vspace="20"/>
+						<img src="images/bisc/chocolate.jpg" alt="Image"  border="1" hspace="10" vspace="10"/>
+					</div>
+				</li>
+                <li>
+					<div>
+						<div>
+							
+							<h2>Fruit Nut Biscuits</h2>
+							<p><b>If you love the sweet tutti fruity on your desserts then pick up fruit nut biscuit.</b> </p>
+						</div>
+						<img src="images/bisc/fruit-nut.jpg" alt="Image"  border="1" vspace="1" />
+					</div>
+				</li>
+				<li>
+					<div>
+						<div>
+							
+							<h2>Bournvita Biscuits</h2><br>
+							<p><b></b> </p>
+						</div>
+						<img src="images/bisc/bournvita.jpg" alt="Image"  hspace="10" vspace="1"/>
 					</div>
 				</li>
 				<li>
@@ -108,7 +109,7 @@
 							<h2>Choco Chips Biscuits</h2>
 							<p><b>The goodness of choco chips enhances your taste buds and will make you eat more</b> </p>
 						</div>
-						<img src="images/bisc/chocochips.jpg" alt="Image"  border="1" />
+						<img src="images/bisc/chocochips.jpg" alt="Image"  border="1" hspace="1" vspace="10"/>
 					</div>
 				</li>
 				<li>
@@ -117,7 +118,7 @@
 							<h2>Badam Biscuits</h2>
 							<br><p><b>Boost your brain power and eat Badam biscuit</b></p>
 						</div>
-						<img src="images/bisc/almond.jpg" alt="Image"  border="1"  hspace="20" />
+						<img src="images/bisc/almond.jpg" alt="Image"  border="1"  vspace="10" hspace="10" />
 					</div>
 				</li>
 				<li>
@@ -128,7 +129,7 @@
 							<h2>Cashew Biscuits</h2>
 							<br><p><b>Cashew a gently sweet, buttery yet crunchy nut makes it a tasty nutty biscuit. </b></p>
 						</div>
-						<img src="images/bisc/cashew.jpg" alt="Image"  border="1" vspace="20"/>
+						<img src="images/bisc/cashew.jpg" alt="Image"  border="1" vspace="1"/>
 					</div>
 				</li>
 
@@ -140,7 +141,7 @@
 							<p><b>If you start your day with a cup of Coffee then why not dip and taste the real coffee in the biscuit which gives it a bold,rich and slightly bitter flavor.
 </b> </p>
 						</div>
-						<img src="images/bisc/coffee.jpg" alt="Image"  border="1" hspace="20" vspace="20"/>
+						<img src="images/bisc/coffee.jpg" alt="Image"  border="1" hspace="10" vspace="1"/>
 					</div>
 				</li>
 				
@@ -151,7 +152,7 @@
 							<h2>Butter Scotch Biscuits</h2>
 							<br><p><b>This crunchy biscuit contains some rich butter scotch which is just mouth watering.</b> </p>
 						</div>
-						<img src="images/bisc/butterscotch.jpg" alt="Image"  border="1" />
+						<img src="images/bisc/butterscotch.jpg" alt="Image"  border="1" hspace="1" vspace="10"/>
 					</div>
 				</li>
 				
@@ -162,7 +163,7 @@
 							<h2>Kesar Nankhatai Biscuits</h2>
 							<br><p><b>No artifical color, it contains real Kesar which is added in Nankhatai biscuit to enrich its texture and flavor.</b> </p>
 						</div>
-						<img src="images/bisc/kesarnankatai.jpg" alt="Image" hspace="20"/>
+						<img src="images/bisc/kesarnankatai.jpg" alt="Image" hspace="10"  vspace="10"/>
 					</div>
 				</li>
 				<li>
@@ -172,7 +173,7 @@
 							<h2>Corn Flakes Biscuits</h2>
 							<br><b><p>If your ready for some healthy snack for your morning breakfast then why not have some cornflakes biscuits.</b></p>
 						</div>
-						<img src="images/bisc/cornflakes.jpg" alt="Image" vspace="20"/>
+						<img src="images/bisc/cornflakes.jpg" alt="Image" vspace="1"/>
 					</div>
 				</li>
 				
@@ -184,7 +185,7 @@
 							<h2>Ginger Biscuits</h2>
 							<br><p><b>If you prefer ginger in your tea then you must try our ginger biscuits which contain real ginger.</b> </p>
 						</div>
-						<img src="images/bisc/ginger.jpg" alt="Image" hspace="20" vspace="20"/>
+						<img src="images/bisc/ginger.jpg" alt="Image" hspace="10" vspace="1"/>
 					</div>
 				</li>
 				
@@ -195,7 +196,7 @@
 							<h2>Honey Almond Biscuits</h2>
 							<br><p><b>Real honey with goodness of almond makes this biscuit a perfect blend of flavors.</b> </p>
 						</div>
-						<img src="images/bisc/honeyalmond.jpg" alt="Image"  border="1"  />
+						<img src="images/bisc/honeyalmond.jpg" alt="Image"  border="1" vspace="10"  />
 					</div>
 				</li>
 				
@@ -206,7 +207,7 @@
 							<h2> Cashew Coconut Crunch</h2>
 							<br><p><b> If you like some crunchy cashews on coconut then go for cashew coconut crunch cookies.</b> </p>
 						</div>
-						<img src="images/bisc/cashewcoconut.jpg" alt="Image" hspace="20" vspace="0"/>
+						<img src="images/bisc/cashewcoconut.jpg" alt="Image" hspace="10" vspace="10"/>
 				       </div>
 				</li>
 

@@ -40,7 +40,6 @@
 	</div>
 	<div id="content">
 		<div>
-			<h1>BAKER'S INN</h1>
 			<ul>
 				<li>
 					<div>
@@ -87,7 +86,6 @@
 						<div>
 							<h2>Toasts</h2>
 							<br /><p><b>Launching Soon ...... </b></p>
-							<a href="#" class="view">view all</a>
 						</div>
 						<img src="images/cakes.jpg" alt="Image" />
 					</div>

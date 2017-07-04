@@ -22,7 +22,6 @@ public partial class contentManagement : System.Web.UI.Page
         }
         else
         {
-            MessageBox.Show("Unauthorized Access");
             Response.Redirect("/login.aspx");
         }
 

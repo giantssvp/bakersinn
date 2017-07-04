@@ -47,10 +47,10 @@
 					
 					<li><a href="index.aspx">other</a></li>
 				</ul>
-                    <a href="index.aspx"><img class="mySlides" src="images/wedding-cupcakes-large.jpg" style="width:73%"/></a>
-				    <img class="mySlides" src="images/cakes/Choco_walnut.jpg" style="width:73%" />  
+                    <a href="index.aspx"><img class="mySlides" src="images/main.jpg" style="width:73%"/></a>
+				   <!-- <img class="mySlides" src="images/cakes/Choco_walnut.jpg" style="width:73%" />  
 					<img class="mySlides" src="images/wedding-cupcakes-large-bk.jpg" style="width:73%" />
-					<img class="mySlides" src="images/cakes/Fruit.jpg" style="width:73%" />
+					<img class="mySlides" src="images/cakes/Fruit.jpg" style="width:73%" /> -->
 			</div>
 		</div>
 	</div>

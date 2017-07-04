@@ -18,7 +18,7 @@
 	<![endif]-->
 
     <style type="text/css">  
-      html, body, #canvasMap {  
+      #canvasMap {  
         height: 400px; 
       } 
     </style> 

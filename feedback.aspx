@@ -63,10 +63,10 @@
 			<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback</h1>
 			<form runat="server">
 				<input type="text" id="name" runat="server" maxlength="30" placeholder="Name" class="textcontact" />
-				<input type="text" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
-				<input type="text" id="subject" runat="server" maxlength="50" placeholder="Subject [Required]" class="textcontact" required/>
-				<textarea id="message" runat="server" cols="30" rows="10" maxlength="500" placeholder="Message [Required]" required></textarea>
-				<input type="submit" id="submit_button" value="" class="submit" runat="server" onserverclick="submit_button_Click" />
+				<input onblur="return checkEmail();" type="text" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
+         	    <input type="text" id="subject" runat="server" maxlength="50" placeholder="Subject [Required]" class="textcontact" required/>
+         		<textarea id="message" runat="server" cols="30" rows="10" maxlength="500" placeholder="Message [Required]" required></textarea>
+				<input type="submit" id="submit_button" value="" class="submit" runat="server" onclientclick="checkEmail" onserverclick="submit_button_Click" />
 			</form>
 		</div>
 	</div>
@@ -88,4 +88,18 @@
 		</div>
 	</div>
 </body>
+    <script>
+        function checkEmail()
+        {
+            var email1 = document.getElementById('email');
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            if (!filter.test(email1.value))
+            {
+                alert('Please provide a valid email address');
+                return false;
+            }
+            return true;
+        }
+    </script>
 </html>

@@ -61,9 +61,9 @@
 		<div id="sidebar">
             <br />
 			<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback</h1>
-			<form runat="server">
+			<form runat="server" onsubmit="return checkEmail()" >
 				<input type="text" id="name" runat="server" maxlength="30" placeholder="Name" class="textcontact" />
-				<input onblur="checkEmail();" type="email" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
+				<input type="email" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
          	    <input type="text" id="subject" runat="server" maxlength="50" placeholder="Subject [Required]" class="textcontact" required/>
          		<textarea id="message" runat="server" cols="30" rows="10" maxlength="500" placeholder="Message [Required]" required></textarea>
 				<input type="submit" id="submit_button" value="" class="submit" runat="server" onclientclick="checkEmail" onserverclick="submit_button_Click" />
@@ -97,6 +97,7 @@
             if (!filter.test(email1.value))
             {
                 alert('Please provide a valid email address');
+                email1.focus();
                 return false;
             }
             return true;

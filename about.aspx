@@ -17,6 +17,13 @@
 		<link rel="stylesheet" type="text/css" href="css/ie6.css" />
 	<![endif]-->
 </head>
+    <style>
+       p {
+            font-family: Romantic;
+            font-size:20px;
+            font-style: italic;
+        }
+    </style>
 <body>
 	<div id="header">
 		<div>
@@ -43,27 +50,26 @@
 			<div class="aside">
 				<h1>Our Story: </h1>
 
-				<p>My passion for baking gave me the courage to start an independent business. </p><p>As the saying goes "Growth is never by mere chance; it is the result of forces working together" </p>
-				<p>, so with my wife Sangita and daughter Arti we founded Baker's Inn in 2007.</p>
-				<p>Three decades of experience in Bakery and Confectionary business helped me venture into </p>
-				<p>an independent entity of my own after a long struggle and efforts.</p>
-                <p>Today Baker's Inn is a well known brand known for specialized biscuit and cake varieties </p> 
-				<p> which are sold at numerous outlets in Pune. </p>
-                <p>I always believe that through hard work,preservance and faith in god,you can achieve what you want. </p>
-				</div>
+				<p>My passion for baking gave me the courage to start an independent business. </p>
+                <p>As the saying goes "Growth is never by mere chance; it is the result of forces working together",
+                     so with my wife Sangita and daughter Arti we founded Baker's Inn in 2007.</p>
+                <p>Three decades of experience in Bakery and Confectionary business helped me venture into
+				   an independent entity of my own after a long struggle and efforts.</p>
+                <p>Today Baker's Inn is a well known brand known for specialized biscuit and cake varieties 
+				   which are sold at numerous outlets in Pune. </p>
+                <p>I always believe that through hard work, preservance and faith in god, you can achieve what you want. </p>
+				
+			</div>
 			<div class="section">
-				 <ul>
-					    
+				 <ul>					    
                         <li>
-						    <a href="index.aspx"><img src="images/burgercake.jpg" alt="Image" /></a>
-					    </li>
-					    <li>
-						    <a href="index.aspx"><img src="images/cupcake.jpg" alt="Image" /></a>
-					    </li>
+						    <a href="index.aspx"><img src="images/chef.jpg" alt="Image" /></a>
+					    </li>					    
                     </ul>
 			</div>
+            
 		</div>
-	</div>
+	</div>  
 	<div id="footer">		
 		<div id="navigation">
 			<div>

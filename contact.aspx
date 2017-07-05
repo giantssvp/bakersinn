@@ -37,7 +37,7 @@
                 SetmapOptions);  
 
             var marker = new google.maps.Marker({
-                position: coordinates,
+                position: { lat: 18.5123000, lng: 73.86932813 },
                 map: map
             });
         }  

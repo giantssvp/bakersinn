@@ -16,16 +16,22 @@ public partial class contentManagement : System.Web.UI.Page
 
         DataBind();
         var db_obj = new db_connect();
-        if (Int32.Parse(Session["login"].ToString()) == 1)
+        try
         {
-            list = db_obj.SelectFeedback(0);
-            row_count = list[0].Count;
+            if (Int32.Parse(Session["login"].ToString()) == 1)
+            {
+                list = db_obj.SelectFeedback(0);
+                row_count = list[0].Count;
+            }
+            else
+            {
+                Response.Redirect("/login.aspx");
+            }
         }
-        else
+        catch
         {
             Response.Redirect("/login.aspx");
         }
-
     }
 
     protected void feedback_approve_button_Click(object sender, EventArgs e)

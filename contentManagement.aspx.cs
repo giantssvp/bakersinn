@@ -124,4 +124,10 @@ public partial class contentManagement : System.Web.UI.Page
         list = db_obj.SelectFeedback(Int32.Parse(Session["offset_login"].ToString()));
         row_count = list[0].Count();
     }
+
+    protected void logout(object sender, EventArgs e)
+    {
+            Session["login"] = 0;
+            Response.Redirect("/login.aspx");
+    }
 }

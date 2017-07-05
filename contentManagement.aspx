@@ -6,6 +6,7 @@
 <head runat="server">
     <meta charset="UTF-8" />
 	<title>BakersInn | Feedback Approve/Delete</title>
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="css/style_table.css" />
     <link rel="stylesheet" type="text/css" href="css/boostrap.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -20,6 +21,7 @@
 	<![endif]-->
 </head>    
 <body class="  ">
+    <form id="form1" runat="server">
     <div class="bg-dark dk" id="wrap">
         <div id="top">
             <!-- .navbar -->
@@ -33,6 +35,15 @@
                     </header>                   
                     <!--<div class="topnav">
                     </div>-->
+                     <div class="topnav">
+                <div class="btn-group">
+                    <a runat="server" onserverclick="logout" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom"
+                            class="btn btn-metis-1 btn-sm">
+                            <i class="fa fa-power-off"></i>
+                    </a>
+                                   
+                 </div>
+             </div>
                     
                 </div>
                     <!-- /.container-fluid -->
@@ -44,7 +55,7 @@
     </div>
 
     <div id="content">
-        <form id="form1" runat="server">
+        
             <table border="1" width="95%">
                 <tr>
                     <th>Select</th>
@@ -89,7 +100,7 @@
                 <p>Copyright &copy; 2017 bakersinn All rights reserved</p>
             </footer>
             <!-- /#footer -->
-
+    <!--
     <script type="text/javascript">
         function approve(val)
         {
@@ -102,6 +113,6 @@
             document.getElementById("hdn_textbox").value = val.value;
             document.getElementById('hdn_delete_btn').click();
         }
-    </script>
+    </script> -->
 </body>
 </html>

@@ -47,7 +47,7 @@
 							<h2>Mawa Cup Cake</h2>
 							<br /><p><b>Soft and fluffy cake made from real Mawa and spiced with cardamom powder.</b></p>
 						</div>
-						<img src="images/cakes/Mawa.jpg" alt="Image" />
+						<img src="images/product/cakes/Mawa.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
@@ -56,7 +56,7 @@
 							<h2>Plain Cake</h2>
 							<br /><p><b>If you like simple cakes with no extra ingredients then plain cake will be the right choice that contains only pure butter. </b></p>
 						</div>
-						<img src="images/cakes/Plain.jpg" alt="Image" hspace="20"  />
+						<img src="images/product/cakes/Plain.jpg" alt="Image" hspace="20"  />
 					</div>
 				</li>
 				<li>
@@ -66,7 +66,7 @@
 							<h2>Fruit Cake</h2>
 							<br /><p><b>This Tutti Fruti fruit cake is fluffy and delicious. </b></p>
 						</div>
-						<img src="images/cakes/Fruit.jpg" alt="Image" vspace="20"/></a>
+						<img src="images/product/cakes/Fruit.jpg" alt="Image" vspace="20"/></a>
 					</div>
 				</li>
 				<li>
@@ -76,7 +76,7 @@
 							<h2>Chocolate Walnut Cake</h2>
 							<br /><p><b> Chocolate and walnuts are a great combination and what can be better than eating a cake that is full of real walnuts and dark chocolate. </b></p>
 						</div>
-						<img src="images/cakes/Chocolate.jpg" alt="Image" hspace="20" vspace="20" />
+						<img src="images/product/cakes/Chocolate.jpg" alt="Image" hspace="20" vspace="20" />
 					</div>
 				</li>
 				

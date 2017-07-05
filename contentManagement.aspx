@@ -29,15 +29,15 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <header class="navbar-header">
-                        <a href="index.aspx" class="navbar-brand"><img src="images/logo_1.jpg" alt=""></a>
-                        <a href="index.aspx" class="navbar-brand"><img src="images/logo_2.jpg" alt=""></a>
+                        <a href="index.aspx" class="navbar-brand"><img src="images/logo_admin_image.jpg" alt=""></a>
+                        <a href="index.aspx" class="navbar-brand"><img src="images/logo_admin_name.jpg" alt=""></a>
                         <font color="black" size="7">.</font>
                     </header>                   
                     <!--<div class="topnav">
                     </div>-->
                      <div class="topnav">
                          <div class="btn-group">
-                                    <a data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip"
+                                    <a href="upload_image.aspx" data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip"
                                        class="btn btn-default btn-sm">
                                         <i class="fa fa-upload"></i>
                                     </a>

@@ -28,17 +28,18 @@ CREATE TABLE Feedback (
 
 insert into bakersinn.login (Username,Password,Email_id, Status) values("admin","admin","admin@gmail.com",1);
 
-insert into bakersinn.gallery (Display_name, Image_name) values("Ginger Biscuits","images/loose_packets/ginger.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Cashew Biscuits","images/loose_packets/cashew.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Badam Biscuits","images/loose_packets/badam.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Butter Scotch Biscuits","images/loose_packets/butter_scotch.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Chocolate Biscuits","images/loose_packets/chocolate.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Fruit Nut Biscuits","images/loose_packets/fruit_nut2.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Honey Almond Biscuits","images/loose_packets/honey_almond.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Kesar Naankhatai Biscuits","images/loose_packets/kesar_nankhatai.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Coconut Biscuits","images/loose_packets/coconut.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Roat Biscuits","images/loose_packets/roat.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Shrewsbury Biscuits","images/loose_packets/shrewsbury.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Bournvita Biscuits","images/loose_packets/bournvita.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Choco Chips Biscuits","images/loose_packets/choco_chips.jpg");
-insert into bakersinn.gallery (Display_name, Image_name) values("Coconut Crunch Biscuits","images/loose_packets/coconut_crunch1.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Ginger Biscuits","images/gallery/ginger.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Cashew Biscuits","images/gallery/cashew.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Badam Biscuits","images/gallery/badam.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Butter Scotch Biscuits","images/gallery/butter_scotch.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Chocolate Biscuits","images/gallery/chocolate.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Fruit Nut Biscuits","images/gallery/fruit_nut.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Honey Almond Biscuits","images/gallery/honey_almond.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Kesar Naankhatai Biscuits","images/gallery/kesar_nankhatai.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Coconut Biscuits","images/gallery/coconut.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Roat Biscuits","images/gallery/roat.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Shrewsbury Biscuits","images/gallery/shrewsbury.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Bournvita Biscuits","images/gallery/bournvita.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Choco Chips Biscuits","images/gallery/choco_chips.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Coconut Crunch Biscuits","images/gallery/coconut_crunch.jpg");
+insert into bakersinn.gallery (Display_name, Image_name) values("Coffee Biscuits","images/gallery/coffee.jpg");

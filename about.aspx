@@ -63,7 +63,7 @@
 			<div class="section">
 				 <ul>					    
                         <li>
-						    <a href="index.aspx"><img src="images/chef.jpg" alt="Image" /></a>
+						    <a href="index.aspx"><img src="images/about/chef.jpg" alt="Image" /></a>
 					    </li>					    
                     </ul>
 			</div>

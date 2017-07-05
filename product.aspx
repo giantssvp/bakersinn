@@ -48,7 +48,7 @@
 							<br /><p><b>Assorted crispy biscuits made from pure butter and natural ingredients</b></p>
 							<a href="product_biscuits.aspx" class="view">view all</a>
 						</div>
-						<img src="images/special-treats.jpg" alt="Image" />
+						<img src="images/product/biscuits.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
@@ -58,7 +58,7 @@
 							<br /><p><b>Light and fluffy cakes </b></p>
 							<a href="product_cakes.aspx" class="view">view all</a>
 						</div>
-						<img src="images/tarts.jpg" alt="Image" />
+						<img src="images/product/cakes.jpg" alt="Image" />
 					</div>
 				</li>				
 				<li>
@@ -68,7 +68,7 @@
 							<br /><p><b> Crispy and crunchy snack </b></p>
 							<a href="product_khari.aspx" class="view">view all</a>
 						</div>
-						<img src="images/dessert.jpg" alt="Image" />
+						<img src="images/product/khari.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>
@@ -78,7 +78,7 @@
 							<br /><p><b> Gift your near and dear ones our seasonal specialities</b> </p>
 							<a href="product_seasonal.aspx" class="view">view all</a>
 						</div>
-						<img src="images/pastries.jpg" alt="Image" />
+						<img src="images/product/seasonal_special.jpg" alt="Image" />
 					</div>
 				</li>
                 <li>
@@ -87,7 +87,7 @@
 							<h2>Toasts</h2>
 							<br /><p><b>Launching Soon ...... </b></p>
 						</div>
-						<img src="images/cakes.jpg" alt="Image" />
+						<img src="images/product/toasts.jpg" alt="Image" />
 					</div>
 				</li>
 				<li>

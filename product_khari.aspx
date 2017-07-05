@@ -48,7 +48,7 @@
 							<br />
 							<p><b>This daily crispy snack is heavenly when dipped in tea or coffee. At Baker's Inn you will get <u><i>Maska Khari</i></u> and <u><i>Cheese Khari.</i></u></b></p>
 						</div>
-						<img src="images/seasonal/khari.jpg" alt="Image" />
+						<img src="images/product/khari/khari.jpg" alt="Image" />
 					</div>
 				</li>			
 			</ul>

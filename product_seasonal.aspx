@@ -44,7 +44,7 @@
 				<li>
 					<div>
 						<div>
-							<h2>Easter Eggs </h2>
+							<h2>Easter Eggs <img src="images/veg_logo.jpg"/></h2>
 							<br /><p><b>Made from handmade chocolates, these are decorated eggs that are used as gifts during Easter season.</b></p>
 						</div>
 						<img src="images/seasonal/Eggs.jpg" alt="Image" />
@@ -53,7 +53,7 @@
 				<li>
 					<div>
 						<div>
-							<h2>Plum Cakes for Christmas</h2>
+							<h2>Plum Cakes for Christmas <img src="images/non_veg_logo.jpg"/></h2>
 							<br /><p><b>This delicious cake is a combination of real plums soaked in rum, dried fruits,spices and caramel that makes this cake so special for christmas.</b></p>
 						</div>
 						<img src="images/seasonal/Plum.jpg" alt="Image" hspace="20"  />

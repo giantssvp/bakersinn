@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
             </form>
     
             <%for (int i = 0; i < row_count; i++) { %>
-                <div class="w3-quarter">
+                <div class="w3-quarter ">
                     <img src="<% =list[1][i] %>" alt="Sandwich" style="width:100%" />
                     <h4><% =list[0][i] %></h4>
                 </div>

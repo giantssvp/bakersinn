@@ -13,6 +13,7 @@ public partial class contentManagement : System.Web.UI.Page
     public int row_count;
     protected void Page_Load(object sender, EventArgs e)
     {
+
         DataBind();
         var db_obj = new db_connect();
         if (Int32.Parse(Session["login"].ToString()) == 1)

@@ -78,7 +78,7 @@
 						<div>
 							
 							<h2>Chocolate Cookies</h2>
-							<p><b>The bitter-sweet taste of dark chocolate makes these cookies famous amongst chocolate lovers.</b> </p>
+							<p><b>The bitter-sweet taste of dark chocolate makes these cookies famous amongst chocolate <br /> lovers.</b> </p>
 						</div>
 						<img src="images/bisc/chocolate.jpg" alt="Image"  border="1" hspace="10" vspace="10"/>
 					</div>
@@ -98,7 +98,7 @@
 						<div>
 							
 							<h2>Bournvita Biscuits</h2><br>
-							<p><b></b> </p>
+							<p><b>If Bournvita is what you prefer in Milk then dip and eat Milky Bournvita</b> </p>
 						</div>
 						<img src="images/bisc/bournvita.jpg" alt="Image"  hspace="10" vspace="1"/>
 					</div>
@@ -138,7 +138,7 @@
 						<div>
 							
 							<h2>Coffee Biscuits</h2>
-							<p><b>If you start your day with a cup of Coffee then why not dip and taste the real coffee in the biscuit which gives it a bold,rich and slightly bitter flavor.
+							<p><b>If you start your day with a cup of Coffee then why not dip & taste the real coffee in the biscuit which gives it a bold,rich & slightly bitter flavor.
 </b> </p>
 						</div>
 						<img src="images/bisc/coffee.jpg" alt="Image"  border="1" hspace="10" vspace="1"/>
@@ -160,8 +160,8 @@
 					<div>
 						<div>
 						
-							<h2>Kesar Nankhatai Biscuits</h2>
-							<br><p><b>No artifical color, it contains real Kesar which is added in Nankhatai biscuit to enrich its texture and flavor.</b> </p>
+							<h2>Kesar Naankhatai Biscuits</h2>
+							<br><p><b>No artifical color, it contains real Kesar which is added in Naankhatai biscuit to enrich its texture and flavor.</b> </p>
 						</div>
 						<img src="images/bisc/kesarnankatai.jpg" alt="Image" hspace="10"  vspace="10"/>
 					</div>
@@ -171,7 +171,7 @@
 						<div>
 							<br>
 							<h2>Corn Flakes Biscuits</h2>
-							<br><b><p>If your ready for some healthy snack for your morning breakfast then why not have some cornflakes biscuits.</b></p>
+							<br><b><p>If you are ready for some healthy snack for your morning breakfast then why not have some cornflakes biscuits.</b></p>
 						</div>
 						<img src="images/bisc/cornflakes.jpg" alt="Image" vspace="1"/>
 					</div>
@@ -183,7 +183,7 @@
 						<div>
 						<br>
 							<h2>Ginger Biscuits</h2>
-							<br><p><b>If you prefer ginger in your tea then you must try our ginger biscuits which contain real ginger.</b> </p>
+							<br><p><b>If you prefer ginger in your tea then you must try our ginger biscuits which contains real ginger.</b> </p>
 						</div>
 						<img src="images/bisc/ginger.jpg" alt="Image" hspace="10" vspace="1"/>
 					</div>
@@ -194,7 +194,7 @@
 						<div>
 						
 							<h2>Honey Almond Biscuits</h2>
-							<br><p><b>Real honey with goodness of almond makes this biscuit a perfect blend of flavors.</b> </p>
+							<br><p><b>Real honey with goodness of almond makes this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;biscuit a perfect blend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of flavors.</b> </p>
 						</div>
 						<img src="images/bisc/honeyalmond.jpg" alt="Image"  border="1" vspace="10"  />
 					</div>

@@ -41,9 +41,8 @@
 	<div id="content">
 		<div id="about">
 			<div class="aside">
-				<h1>Bakersinn</h1>
-				
-				<span>Our Story: </span>
+				<h1>Our Story: </h1>
+
 				<p>My passion for baking gave me the courage to start an independent business. </p><p>As the saying goes "Growth is never by mere chance; it is the result of forces working together" </p>
 				<p>, so with my wife Sangita and daughter Arti we founded Baker's Inn in 2007.</p>
 				<p>Three decades of experience in Bakery and Confectionary business helped me venture into </p>

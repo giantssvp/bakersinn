@@ -40,7 +40,6 @@
 	</div>
 	<div id="content">
 		<div>
-			<h1>BAKER'S INN</h1>
 			<ul>
 				<li>
 					<div>
@@ -55,7 +54,7 @@
 					<div>
 						<div>
 							<h2>Plain Cake</h2>
-							<br /><p><b>If you like simple cakes with no extra ingredients , plain cake will be the right choice that contains only pure butter. </b></p>
+							<br /><p><b>If you like simple cakes with no extra ingredients then plain cake will be the right choice that contains only pure butter. </b></p>
 						</div>
 						<img src="images/cakes/Plain.jpg" alt="Image" hspace="20"  />
 					</div>

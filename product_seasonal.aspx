@@ -40,7 +40,6 @@
 	</div>
 	<div id="content">
 		<div>
-			<h1>BAKER'S INN</h1>
 			<ul>
 				<li>
 					<div>
@@ -55,7 +54,7 @@
 					<div>
 						<div>
 							<h2>Plum Cakes for Christmas</h2>
-							<br /><p><b>This delicious cake is a combination of real plums soaked in rum, dried fruits,spices and caramel that makes this cake so special for christmas.The aroma of all these ingredients is irresistible and will make you eat more. </b></p>
+							<br /><p><b>This delicious cake is a combination of real plums soaked in rum, dried fruits,spices and caramel that makes this cake so special for christmas.</b></p>
 						</div>
 						<img src="images/seasonal/Plum.jpg" alt="Image" hspace="20"  />
 					</div>

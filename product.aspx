@@ -75,7 +75,7 @@
 					<div>
 						<div>
 							<h2>Seasonal special</h2>
-							<br /><p><b> Gift your near and dear ones our seasonal specialties</b> </p>
+							<br /><p><b> Gift your near and dear ones our seasonal specialities</b> </p>
 							<a href="product_seasonal.aspx" class="view">view all</a>
 						</div>
 						<img src="images/pastries.jpg" alt="Image" />

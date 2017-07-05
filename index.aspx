@@ -39,18 +39,18 @@
 			</ul>
 			<div id="section">
 				<ul>
-					<li><a href="index.aspx">Biscuits</a></li>
-					<li><a href="index.aspx">Cakes</a></li>
-					<li><a href="index.aspx">Khari</a></li>
+					<li><a href="product_biscuits.aspx">Biscuits</a></li>
+					<li><a href="product_cakes.aspx">Cakes</a></li>
+					<li><a href="product_khari.aspx">Khari</a></li>
 					<li><a href="index.aspx">Toast</a></li>
-					<li><a href="index.aspx">Seasonal Specials</a></li>
+					<li><a href="product_seasonal.aspx">Seasonal Specials</a></li>
 					
 					<li><a href="index.aspx">other</a></li>
 				</ul>
-                    <a href="index.aspx"><img class="mySlides" src="images/main.jpg" style="width:73%"/></a>
-				   <!-- <img class="mySlides" src="images/cakes/Choco_walnut.jpg" style="width:73%" />  
+                    <a href="index.aspx"><img class="mySlides" src="images/main1.jpg" style="width:73%"/></a>
+				   <img class="mySlides" src="images/cakes/Choco_walnut.jpg" style="width:73%" />  
 					<img class="mySlides" src="images/wedding-cupcakes-large-bk.jpg" style="width:73%" />
-					<img class="mySlides" src="images/cakes/Fruit.jpg" style="width:73%" /> -->
+					<img class="mySlides" src="images/cakes/Fruit.jpg" style="width:73%" /> 
 			</div>
 		</div>
 	</div>
@@ -67,10 +67,10 @@
 				<div>
                     <ul>
 					    <li  class="first">
-						    <a href="index.aspx"><img src="images/shrewsbury1.jpg" alt="Image" /></a>
+						    <a href="index.aspx"><img src="images/first.jpg" alt="Image" /></a>
 					    </li>
                         <li>
-						    <a href="index.aspx"><img src="images/burgercake.jpg" alt="Image" /></a>
+						    <a href="index.aspx"><img src="images/new1.jpg" alt="Image" /></a>
 					    </li>
 					    <li>
 						    <a href="index.aspx"><img src="images/cupcake.jpg" alt="Image" /></a>
@@ -79,13 +79,13 @@
 				</div>
 				    <ul>
 					    <li class="first">
-						    <a href="index.aspx"><img src="images/cake.jpg" alt="Image" /></a>
+						    <a href="index.aspx"><img src="images/second.jpg" alt="Image" /></a>
+					    </li>
+					    <li>
+						    <a href="index.aspx"><img src="images/new2.jpg" alt="Image" /></a>
 					    </li>
 					    <li>
 						    <a href="index.aspx"><img src="images/burgercake.jpg" alt="Image" /></a>
-					    </li>
-					    <li>
-						    <a href="index.aspx"><img src="images/cupcake.jpg" alt="Image" /></a>
 					    </li>
 				    </ul>
 			</div>

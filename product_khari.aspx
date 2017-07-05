@@ -40,14 +40,13 @@
 	</div>
 	<div id="content">
 		<div>
-			<h1>BAKER'S INN</h1>
 			<ul>
 				<li>
 					<div>
 						<div>
 							<h2>Khari </h2>
 							<br />
-							<p><b>This daily crispy snack is heavenly when dipped in tea or coffee.At Baker's Inn you will get <u><i>Maska Khari</i></u> and <u><i>Cheese Khari.</i></u></b></p>
+							<p><b>This daily crispy snack is heavenly when dipped in tea or coffee. At Baker's Inn you will get <u><i>Maska Khari</i></u> and <u><i>Cheese Khari.</i></u></b></p>
 						</div>
 						<img src="images/seasonal/khari.jpg" alt="Image" />
 					</div>

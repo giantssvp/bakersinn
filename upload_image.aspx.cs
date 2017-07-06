@@ -10,12 +10,11 @@ public partial class upload_image : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
     }
 
     protected void UploadFile(object sender, EventArgs e)
     {
-        string folderPath = Server.MapPath("~/images/loose_packets/");
+        string folderPath = Server.MapPath("~/images/gallery/");
 
         //Check whether Directory (Folder) exists.
         if (!Directory.Exists(folderPath))
@@ -28,6 +27,14 @@ public partial class upload_image : System.Web.UI.Page
         FileUpload1.SaveAs(folderPath + Path.GetFileName(FileUpload1.FileName));
 
         //Display the success message.
-        lblMessage.Text = folderPath + Path.GetFileName(FileUpload1.FileName) + " has been uploaded.";        
+        lblMessage.Text = folderPath + Path.GetFileName(FileUpload1.FileName) + " has been uploaded.";
+
+        var name = display_name.Value;
+        var path = "images/gallery/" + Path.GetFileName(FileUpload1.FileName);
+
+        var db_obj = new db_connect();
+        db_obj.Insert_gallery(name, path);
+
+        display_name.Value = "";
     }
 }

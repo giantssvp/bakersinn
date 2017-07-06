@@ -31,7 +31,7 @@
                     <header class="navbar-header">
                         <a href="index.aspx" class="navbar-brand"><img src="images/logo_admin_image.jpg" alt=""></a>
                         <a href="index.aspx" class="navbar-brand"><img src="images/logo_admin_name.jpg" alt=""></a>
-                        <font color="black" size="7">.</font>
+                        <font color="#3a3a3a" size="7">.</font>
                     </header>                   
                     <!--<div class="topnav">
                     </div>-->

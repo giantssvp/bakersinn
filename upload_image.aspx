@@ -31,7 +31,7 @@
                     <header class="navbar-header">
                         <a href="index.aspx" class="navbar-brand"><img src="images/logo_admin_image.jpg" alt="" /></a>
                         <a href="index.aspx" class="navbar-brand"><img src="images/logo_admin_name.jpg" alt="" /></a>
-                        <font color="black" size="7">.</font>
+                        <font color="#3a3a3a" size="7">.</font>
                     </header>                   
                     <!--<div class="topnav">
                     </div>-->
@@ -57,7 +57,7 @@
        
     <div id="content" align="center">
         <label> Display Name : </label>
-        <input type="text" id="name" name="name" required/> <span style="color:red;"> * </span>
+        <input type="text" id="display_name" name="display_name" runat="server" maxlength="20" required/> <span style="color:red;"> * </span>
         <br /><br />
         <asp:FileUpload ID="FileUpload1" runat="server" accept=".png,.jpg,.jpeg,.gif"/>
         <hr />

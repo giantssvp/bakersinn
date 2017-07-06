@@ -63,11 +63,10 @@
 			<div class="section">
 				 <ul>					    
                         <li>
-						    <a href="index.aspx"><img src="images/about/chef.jpg" alt="Image" /></a>
+						    <a href="index.aspx"><img src="images/about/baker.jpg" alt="Image" /></a>
 					    </li>					    
                     </ul>
-			</div>
-            
+			</div>            
 		</div>
 	</div>  
 	<div id="footer">		

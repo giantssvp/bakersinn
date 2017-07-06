@@ -70,6 +70,21 @@ public class db_connect
         }
     }
 
+    public void Insert_gallery(string name, string path)
+    {
+        string query = "INSERT INTO gallery (Display_name, Image_name) VALUES(@name, @path)";
+
+        if (this.OpenConnection() == true)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@path", path);
+
+            cmd.ExecuteNonQuery();
+            this.CloseConnection();
+        }
+    }
+
     public Boolean Login(string name, string password)
     {
         MySqlDataReader rdr;

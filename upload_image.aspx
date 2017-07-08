@@ -57,7 +57,7 @@
        
     <div id="content" align="center">
         <label> Display Name : </label>
-        <input type="text" id="display_name" name="display_name" runat="server" maxlength="20" required/> <span style="color:red;"> * </span>
+        <input type="text" id="display_name" name="display_name" runat="server" maxlength="21" required/> <span style="color:red;"> * </span>
         <br /><br />
         <asp:FileUpload ID="FileUpload1" runat="server" accept=".png,.jpg,.jpeg,.gif"/>
         <hr />
@@ -73,7 +73,7 @@
                 <p>Copyright &copy; 2017 bakersinn All rights reserved</p>
        
                </footer>
-    <!-- 
+     
         <script>
         var fileInput = document.getElementById("FileUpload1");
         // listening on when someone selects a file
@@ -96,18 +96,17 @@
             window.URL.revokeObjectURL(img.src);
 
             // check its dimensions
-            if (width <= 64 && height <= 64) {
+            if (width <= 275 && height <= 205) {
               // it fits 
             } else {
               // it doesn't fit, unset the value 
               // post an error
               fileInput.value = ""
-              alert("only 64x64 images")
+              alert("Image size must be 275 x 205.")
             }
           };
 
         };
-    </script> 
-        -->
+    </script>
 </body>
 </html>

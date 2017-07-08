@@ -52,8 +52,9 @@ public class db_connect
         }
     }
 
-    public void Insert(string name, string email, string sub, string msg)
+    public int Insert(string name, string email, string sub, string msg)
     {
+        int id = -1;
         string query = "INSERT INTO feedback (Name, Email_id, Subject, Message, Status, Date) VALUES(@name, @email, @sub, @msg, @sts, CURDATE())";
 
         if (this.OpenConnection() == true)
@@ -66,8 +67,13 @@ public class db_connect
             cmd.Parameters.AddWithValue("@sts", false);
 
             cmd.ExecuteNonQuery();
+
+            MySqlCommand cmd1 = new MySqlCommand("SELECT LAST_INSERT_ID()", connection);
+            id = Convert.ToInt32(cmd1.ExecuteScalar());
+
             this.CloseConnection();
         }
+        return id;
     }
 
     public void Insert_gallery(string name, string path)
@@ -235,7 +241,7 @@ public class db_connect
 
     public List<string>[] gallery_show(int offset)
     {
-        string query = "SELECT * FROM gallery ORDER BY Display_name DESC LIMIT 8 OFFSET @offset";
+        string query = "SELECT * FROM gallery ORDER BY Display_name LIMIT 8 OFFSET @offset";
 
         list_gallery_show[0] = new List<string>();
         list_gallery_show[1] = new List<string>();

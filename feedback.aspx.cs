@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Net;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -17,14 +21,62 @@ public partial class feedback : System.Web.UI.Page
         DataBind();
         var db_obj = new db_connect();
         list = db_obj.feedback_show(0);
-        total = list[0].Count();
+        total = list[0].Count();                
+    }
+
+    private void SendHtmlFormattedEmail(string recepientEmail, string subject, string body)
+    {
+        using (MailMessage mailMessage = new MailMessage())
+        {
+            mailMessage.From = new MailAddress("shyamdeshmukh1@gmail.com"); //new MailAddress(ConfigurationManager.AppSettings["UserName"]);
+            mailMessage.Subject = subject;
+            mailMessage.Body = body;
+            mailMessage.IsBodyHtml = true;
+            mailMessage.To.Add(new MailAddress(recepientEmail));
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = ConfigurationManager.AppSettings["Host"];
+            smtp.EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"]);
+            System.Net.NetworkCredential NetworkCred = new System.Net.NetworkCredential();
+            NetworkCred.UserName = ConfigurationManager.AppSettings["UserName"];
+            NetworkCred.Password = ConfigurationManager.AppSettings["Password"];
+            smtp.UseDefaultCredentials = true;
+            smtp.Credentials = NetworkCred;
+            smtp.Port = int.Parse(ConfigurationManager.AppSettings["Port"]);
+            smtp.Send(mailMessage);
+        }
     }
 
     protected void submit_button_Click(object sender, EventArgs e)
     {
-        var db_obj = new db_connect();
-        db_obj.Insert(name.Value, email.Value, subject.Value, message.Value);
-        name.Value = email.Value = subject.Value = message.Value = "";
+        try
+        {
+            var db_obj = new db_connect();
+            int latest_id = db_obj.Insert(name.Value, email.Value, subject.Value, message.Value);
+            MessageBox.Show(latest_id.ToString());
+
+            name.Value = email.Value = subject.Value = message.Value = "";
+                    
+            MailMessage mail = new MailMessage();
+            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+            mail.From = new MailAddress("abcdtes26@gmail.com");
+            mail.To.Add("abcdtes26@gmail.com");
+            mail.Subject = "Test Mail";
+            mail.Body = "This is for testing SMTP mail from GMAIL" + latest_id.ToString();
+
+            SmtpServer.Port = 587;
+            SmtpServer.Credentials = new System.Net.NetworkCredential("abcdtes26@gmail.com", "9921642540");
+            SmtpServer.EnableSsl = true;
+
+            //DeliveryMethod = SmtpDeliveryMethod.Network;
+
+            SmtpServer.Send(mail);
+            MessageBox.Show("mail Send");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.ToString());
+        }
     }
 
     protected void old_post_Click(object sender, EventArgs e)
@@ -86,5 +138,19 @@ public partial class feedback : System.Web.UI.Page
         var db_obj = new db_connect();
         list = db_obj.feedback_show(0);
         total = list[0].Count();
+    }
+
+    private string PopulateBody(string userName, string title, string url, string description)
+    {
+        string body = string.Empty;
+        using (StreamReader reader = new StreamReader(Server.MapPath("~/EmailTemplate.htm")))
+        {
+            body = reader.ReadToEnd();
+        }
+        body = body.Replace("{UserName}", userName);
+        body = body.Replace("{Title}", title);
+        body = body.Replace("{Url}", url);
+        body = body.Replace("{Description}", description);
+        return body;
     }
 }

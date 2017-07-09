@@ -96,7 +96,7 @@
             window.URL.revokeObjectURL(img.src);
 
             // check its dimensions
-            if (width <= 275 && height <= 205) {
+            if (width == 275 && height == 205) {
               // it fits 
             } else {
               // it doesn't fit, unset the value 

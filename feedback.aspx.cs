@@ -62,14 +62,30 @@ public partial class feedback : System.Web.UI.Page
             mail.From = new MailAddress("abcdtes26@gmail.com");
             mail.To.Add("abcdtes26@gmail.com");
             mail.Subject = "Test Mail";
-            mail.Body = "This is for testing SMTP mail from GMAIL" + latest_id.ToString();
+            mail.IsBodyHtml = true;
+            string htmlBody;
+
+            /*htmlBody = "<html> " +  
+                           " < body >" +
+                               "  < script >"+
+                                    "function Click() {"+
+                                        "window.open(\"http://yahoo.com\");" +
+                                   " }" +
+                               " </ script >" +
+                                "< input id = \"Button1\" onclick = \"Click()\" type = \"button\" value = \"button\" /> " +
+                          "  </ body > " +
+                      " </ html > ";*/
+
+            htmlBody = "<button id=\"test\"  type=\"button\" runat= \"server\" onseverclick=\"test1\">Test" + latest_id.ToString() + "</button>";
+            mail.Body = htmlBody;
+            //mail.Body = "This is for testing SMTP mail from GMAIL" + latest_id.ToString();
 
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("abcdtes26@gmail.com", "9921642540");
             SmtpServer.EnableSsl = true;
 
             //DeliveryMethod = SmtpDeliveryMethod.Network;
-
+            
             SmtpServer.Send(mail);
             MessageBox.Show("mail Send");
         }

@@ -61,7 +61,7 @@
 		<div id="sidebar">
             <br />
 			<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback</h1>
-			<form runat="server" onsubmit="return checkEmail()" >
+			<form runat="server">
 				<input type="text" id="name" runat="server" maxlength="30" placeholder="Name" class="textcontact" />
 				<input type="email" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
          	    <input type="text" id="subject" runat="server" maxlength="50" placeholder="Subject [Required]" class="textcontact" required/>

@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 	
     <div class="w3-main w3-content w3-padding" style="max-width:900px;margin-top:10px">
         <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            <form action="#" runat="server">
+            <form runat="server">
                 <div class="w3-center w3-padding-32">
                     <div>
                         <a class="w3-bar-item w3-button w3-hover-black" runat="server" onserverclick="previous_button_Click"> <<  </a> &nbsp;&nbsp;&nbsp;

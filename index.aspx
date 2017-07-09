@@ -21,6 +21,12 @@
 <style>  
 .mySlides {display:none;}
 </style>
+    <style>
+       p {
+            font-family: 'Zapf-Chancery', cursive;
+            font-size:25px;
+        }
+    </style>
 <body>
 	<div id="header">
 		<div>
@@ -62,7 +68,7 @@
 			<div class="aside">
 				<h1>Welcome to our site</h1>
 				<p><b>Baker's Inn </b>is a manufacturing unit which produces quality bakery products.</p>
-				<p>All our products are made from the finest ingredients with no artificial flavouring or preservatives.<p>
+				<p>All our products are made from the finest ingredients with no artificial flavouring or preservatives.</p>
 				<p>All the varities have unique flavour and texture.</p>
 			</div>
 			<div class="section">

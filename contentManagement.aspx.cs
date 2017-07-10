@@ -67,6 +67,7 @@ public partial class contentManagement : System.Web.UI.Page
     protected void pagination_first_button_Click(object sender, EventArgs e)
     {
         DataBind();
+        Session["offset_login"] = 0;
         var db_obj = new db_connect();
         list = db_obj.SelectFeedback(0);
         row_count = list[0].Count;

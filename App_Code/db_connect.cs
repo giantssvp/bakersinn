@@ -143,7 +143,7 @@ public class db_connect
 
     public List<string>[] SelectFeedback(int offset)
     {
-        string query = "SELECT * FROM feedback where Status = 0 ORDER BY Date DESC LIMIT 5 OFFSET @offset";
+        string query = "SELECT * FROM feedback where Status = 0 ORDER BY Date DESC, ID DESC LIMIT 5 OFFSET @offset";
 
         List<string>[] list = new List<string>[7];
         list[0] = new List<string>();
@@ -197,7 +197,7 @@ public class db_connect
 
     public List<string>[] feedback_show(int offset)
     {
-        string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC LIMIT 2 OFFSET @offset";
+        string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC, ID DESC LIMIT 2 OFFSET @offset";
 
         list_feedback_show[0] = new List<string>();
         list_feedback_show[1] = new List<string>();

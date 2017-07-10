@@ -53,9 +53,7 @@ public partial class feedback : System.Web.UI.Page
             var db_obj = new db_connect();
             int latest_id = db_obj.Insert(name.Value, email.Value, subject.Value, message.Value);
             MessageBox.Show(latest_id.ToString());
-
-            name.Value = email.Value = subject.Value = message.Value = "";
-                    
+        
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
@@ -65,18 +63,23 @@ public partial class feedback : System.Web.UI.Page
             mail.IsBodyHtml = true;
             string htmlBody;
 
-            /*htmlBody = "<html> " +  
-                           " < body >" +
-                               "  < script >"+
-                                    "function Click() {"+
+           htmlBody = "<html> <head> </head> <body>" +
+                       "<a href =\"http://localhost:60210/login.aspx\"> <input id = \"Button1\" onclick=\"Click()\" type = \"button\" value = \"button\" /> </a>" +
+                       "<br /> <br /> <table border=\"1\"> <tr> <th> ID </th> <th> Name </th> <th> Email </th> <th> Subject </th> <th> Feedback </th> </tr> <tr> " +
+                       "<td>" + latest_id + "</td>" +
+                       "<td>" + name.Value + "</td>" +
+                       "<td>" + email.Value + "</td>" +
+                       "<td>" + subject.Value + "</td>" +
+                       "<td>" + message.Value + "</td>" + 
+                       "</tr> </table> </body> </html> ";
+            MessageBox.Show(htmlBody);
+
+            /*htmlBody = "<button id=\"test\"  type=\"button\" runat= \"server\" onclick=\"Click()\">Test" + latest_id.ToString() + "</button>" +
+                        "<script> " +
+                                    "function Click() {" +
                                         "window.open(\"http://yahoo.com\");" +
                                    " }" +
-                               " </ script >" +
-                                "< input id = \"Button1\" onclick = \"Click()\" type = \"button\" value = \"button\" /> " +
-                          "  </ body > " +
-                      " </ html > ";*/
-
-            htmlBody = "<button id=\"test\"  type=\"button\" runat= \"server\" onseverclick=\"test1\">Test" + latest_id.ToString() + "</button>";
+                               " </script>";*/
             mail.Body = htmlBody;
             //mail.Body = "This is for testing SMTP mail from GMAIL" + latest_id.ToString();
 
@@ -87,6 +90,8 @@ public partial class feedback : System.Web.UI.Page
             //DeliveryMethod = SmtpDeliveryMethod.Network;
             
             SmtpServer.Send(mail);
+
+            name.Value = email.Value = subject.Value = message.Value = "";
             MessageBox.Show("mail Send");
         }
         catch (Exception ex)
@@ -94,7 +99,7 @@ public partial class feedback : System.Web.UI.Page
             MessageBox.Show(ex.ToString());
         }
     }
-
+    
     protected void old_post_Click(object sender, EventArgs e)
     {        
         DataBind();
@@ -151,6 +156,7 @@ public partial class feedback : System.Web.UI.Page
     protected void first_Click(object sender, EventArgs e)
     {
         DataBind();
+        Session["offset"] = 0;
         var db_obj = new db_connect();
         list = db_obj.feedback_show(0);
         total = list[0].Count();

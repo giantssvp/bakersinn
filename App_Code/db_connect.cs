@@ -197,30 +197,37 @@ public class db_connect
 
     public List<string>[] feedback_show(int offset)
     {
-        string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC, ID DESC LIMIT 2 OFFSET @offset";
-
-        list_feedback_show[0] = new List<string>();
-        list_feedback_show[1] = new List<string>();
-        list_feedback_show[2] = new List<string>();
-
-        if (this.OpenConnection() == true)
+        try
         {
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@offset", offset);
-            MySqlDataReader dataReader = cmd.ExecuteReader();
+            string query = "SELECT * FROM feedback where status = 1 ORDER BY Date DESC, ID DESC LIMIT 2 OFFSET @offset";
 
-            while (dataReader.Read())
+            list_feedback_show[0] = new List<string>();
+            list_feedback_show[1] = new List<string>();
+            list_feedback_show[2] = new List<string>();
+
+            if (this.OpenConnection() == true)
             {
-                list_feedback_show[0].Add(dataReader["Subject"] + "");
-                list_feedback_show[1].Add(dataReader["Message"] + "");
-                list_feedback_show[2].Add(dataReader["Date"] + "");
-            }
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@offset", offset);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
 
-            dataReader.Close();
-            this.CloseConnection();
-            return list_feedback_show;
+                while (dataReader.Read())
+                {
+                    list_feedback_show[0].Add(dataReader["Subject"] + "");
+                    list_feedback_show[1].Add(dataReader["Message"] + "");
+                    list_feedback_show[2].Add(dataReader["Date"] + "");
+                }
+
+                dataReader.Close();
+                this.CloseConnection();
+                return list_feedback_show;
+            }
+            else
+            {
+                return list_feedback_show;
+            }
         }
-        else
+        catch (MySqlException ex)
         {
             return list_feedback_show;
         }

@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 public partial class upload_image : System.Web.UI.Page
-{
+{    
     protected void Page_Load(object sender, EventArgs e)
     {
     }
@@ -36,5 +36,11 @@ public partial class upload_image : System.Web.UI.Page
         db_obj.Insert_gallery(name, path);
 
         display_name.Value = "";
+    }
+
+    protected void logout(object sender, EventArgs e)
+    {
+        Session["login"] = 0;
+        Response.Redirect("/login.aspx");
     }
 }

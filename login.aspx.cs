@@ -22,13 +22,13 @@ public partial class login : System.Web.UI.Page
         if (result == true)
         {
             Session["login"] = 1;
+            lblLogin.Text = "";
             Response.Redirect("/contentManagement.aspx");
         }
         else
         {
             Session["login"] = 0;
-            MessageBox.Show("Login Failed");
-            Response.Redirect("/login.aspx");
+            lblLogin.Text = "Login Failed";
         }
     }
 }

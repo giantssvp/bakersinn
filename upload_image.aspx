@@ -37,7 +37,7 @@
                     </div>-->
                      <div class="topnav">                         
                         <div class="btn-group">
-                            <a runat="server" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom"
+                            <a runat="server" onserverclick="logout" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom"
                                     class="btn btn-metis-1 btn-sm">
                                     <i class="fa fa-power-off"></i>
                             </a>

@@ -23,8 +23,9 @@
 </style>
     <style>
        p {
-            font-family: 'Zapf-Chancery', cursive;
+            font-family: Romantic;
             font-size:25px;
+            font-style: italic;
         }
     </style>
 <body>

@@ -33,7 +33,8 @@
 			<input type="password" id="password" runat="server" required/>
 			<br/>
 			<button type="submit" runat="server" id="login_button" value="" onserverclick="login_button_Click">Sign In</button>
-			
+            <br />
+            <asp:Label ID="lblLogin" ForeColor="Red" runat="server" />
 		</div>
 	</div>
         </form>

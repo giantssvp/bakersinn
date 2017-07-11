@@ -52,8 +52,7 @@ public partial class feedback : System.Web.UI.Page
         {
             var db_obj = new db_connect();
             int latest_id = db_obj.Insert(name.Value, email.Value, subject.Value, message.Value);
-            MessageBox.Show(latest_id.ToString());
-        
+            
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
@@ -72,8 +71,7 @@ public partial class feedback : System.Web.UI.Page
                        "<td>" + subject.Value + "</td>" +
                        "<td>" + message.Value + "</td>" + 
                        "</tr> </table> </body> </html> ";
-            MessageBox.Show(htmlBody);
-
+            
             /*htmlBody = "<button id=\"test\"  type=\"button\" runat= \"server\" onclick=\"Click()\">Test" + latest_id.ToString() + "</button>" +
                         "<script> " +
                                     "function Click() {" +
@@ -92,7 +90,6 @@ public partial class feedback : System.Web.UI.Page
             SmtpServer.Send(mail);
 
             name.Value = email.Value = subject.Value = message.Value = "";
-            MessageBox.Show("mail Send");
         }
         catch (Exception ex)
         {

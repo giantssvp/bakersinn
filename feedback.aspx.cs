@@ -58,13 +58,13 @@ public partial class feedback : System.Web.UI.Page
 
             mail.From = new MailAddress("abcdtes26@gmail.com");
             mail.To.Add("abcdtes26@gmail.com");
-            mail.Subject = "Test Mail";
+            mail.Subject = "Feedback : " + subject.Value;
             mail.IsBodyHtml = true;
             string htmlBody;
 
-           htmlBody = "<html> <head> </head> <body>" +
-                       "<a href =\"http://localhost:60210/login.aspx\"> <input id = \"Button1\" onclick=\"Click()\" type = \"button\" value = \"button\" /> </a>" +
-                       "<br /> <br /> <table border=\"1\"> <tr> <th> ID </th> <th> Name </th> <th> Email </th> <th> Subject </th> <th> Feedback </th> </tr> <tr> " +
+           htmlBody = "<html> <head>  </head> <body>" +
+                       "<a href =\"http://localhost:60210/login.aspx\"> <button class=\"button\"> BakersInn </button> </a>" +
+                       "<br /> <br /> <table border=\"1\" style=\"font - family:Georgia, Garamond, Serif; width: 100 %; color: blue; font - style:italic; \"> <tr bgcolor=\"#00FFFF\" align=\"center\"> <th> ID </th> <th> Name </th> <th> Email </th> <th> Subject </th> <th> Feedback </th> </tr> <tr align=\"center\"> " +
                        "<td>" + latest_id + "</td>" +
                        "<td>" + name.Value + "</td>" +
                        "<td>" + email.Value + "</td>" +
@@ -80,7 +80,7 @@ public partial class feedback : System.Web.UI.Page
                                " </script>";*/
             mail.Body = htmlBody;
             //mail.Body = "This is for testing SMTP mail from GMAIL" + latest_id.ToString();
-
+            MessageBox.Show(htmlBody);
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("abcdtes26@gmail.com", "9921642540");
             SmtpServer.EnableSsl = true;

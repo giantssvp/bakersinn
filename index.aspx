@@ -77,25 +77,25 @@
 				<div>
                     <ul>
 					    <li  class="first">
-						    <a href="index.aspx"><img src="images/home/home1.jpg" alt="Image" /></a>
+						    <a><img src="images/home/home1.jpg" alt="Image" /></a>
 					    </li>
                         <li>
-						    <a href="index.aspx"><img src="images/home/home3.jpg" alt="Image" /></a>
+						    <a><img src="images/home/home3.jpg" alt="Image" /></a>
 					    </li>
 					    <li>
-						    <a href="index.aspx"><img src="images/home/home5.jpg" alt="Image" /></a>
+						    <a><img src="images/home/home5.jpg" alt="Image" /></a>
 					    </li>
                     </ul>
 				</div>
 				    <ul>
 					    <li class="first">
-						    <a href="index.aspx"><img src="images/home/home2.jpg" alt="Image" /></a>
+						    <a><img src="images/home/home2.jpg" alt="Image" /></a>
 					    </li>
 					    <li>
-						    <a href="index.aspx"><img src="images/home/home4.jpg" alt="Image" /></a>
+						    <a><img src="images/home/home4.jpg" alt="Image" /></a>
 					    </li>
 					    <li>
-						    <a href="index.aspx"><img src="images/home/home6.jpg" alt="Image" /></a>
+						    <a><img src="images/home/home6.jpg" alt="Image" /></a>
 					    </li>
 				    </ul>
 			</div>

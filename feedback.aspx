@@ -66,7 +66,7 @@
 				<input type="email" id="email" runat="server" maxlength="50" placeholder="E-mail Address" class="textcontact" />
          	    <input type="text" id="subject" runat="server" maxlength="50" placeholder="Subject [Required]" class="textcontact" required/>
          		<textarea id="message" runat="server" cols="30" rows="10" maxlength="500" placeholder="Message [Required]" required></textarea>
-				<input type="submit" id="submit_button" value="" class="submit" runat="server" onclick="checkEmail" onserverclick="submit_button_Click" />
+				<input type="submit" id="submit_button" value="" class="submit" runat="server" onclick="checkEmail();" onserverclick="submit_button_Click" />
 			</form>
 		</div>
 	</div>

@@ -58,13 +58,13 @@ public partial class feedback : System.Web.UI.Page
 
             mail.From = new MailAddress("abcdtes26@gmail.com");
             mail.To.Add("abcdtes26@gmail.com");
-            mail.Subject = "Test Mail";
+            mail.Subject = "Feedback : " + subject.Value;
             mail.IsBodyHtml = true;
             string htmlBody;
 
-           htmlBody = "<html> <head> </head> <body>" +
-                       "<a href =\"http://localhost:60210/login.aspx\"> <input id = \"Button1\" onclick=\"Click()\" type = \"button\" value = \"button\" /> </a>" +
-                       "<br /> <br /> <table border=\"1\"> <tr> <th> ID </th> <th> Name </th> <th> Email </th> <th> Subject </th> <th> Feedback </th> </tr> <tr> " +
+           htmlBody = "<html> <head>  </head> <body>" +
+                       "<a href =\"http://localhost:60210/login.aspx\"> <button class=\"button\"> BakersInn </button> </a>" +
+                       "<br /> <br /> <table border=\"1\" style=\"font - family:Georgia, Garamond, Serif; width: 100 %; color: blue; font - style:italic; \"> <tr bgcolor=\"#00FFFF\" align=\"center\"> <th> ID </th> <th> Name </th> <th> Email </th> <th> Subject </th> <th> Feedback </th> </tr> <tr align=\"center\"> " +
                        "<td>" + latest_id + "</td>" +
                        "<td>" + name.Value + "</td>" +
                        "<td>" + email.Value + "</td>" +
@@ -80,7 +80,7 @@ public partial class feedback : System.Web.UI.Page
                                " </script>";*/
             mail.Body = htmlBody;
             //mail.Body = "This is for testing SMTP mail from GMAIL" + latest_id.ToString();
-
+            MessageBox.Show(htmlBody);
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("abcdtes26@gmail.com", "9921642540");
             SmtpServer.EnableSsl = true;
@@ -103,17 +103,21 @@ public partial class feedback : System.Web.UI.Page
         var db_obj = new db_connect();
 
         int cnt = db_obj.feedback_count(1);
-        
-        if (Int32.Parse(Session["offset"].ToString()) < (cnt-2))
-            Session["offset"] = Int32.Parse(Session["offset"].ToString()) + 2;
-        else
+    
+        if (cnt != 0)
+        {
+            if (Int32.Parse(Session["offset"].ToString()) < (cnt - 2))
+                Session["offset"] = Int32.Parse(Session["offset"].ToString()) + 2;
+            else
             if (cnt % 2 == 0)
                 Session["offset"] = cnt - 2;
             else
                 Session["offset"] = cnt - 1;
+
+            list = db_obj.feedback_show(Int32.Parse(Session["offset"].ToString()));
+            total = list[0].Count();
+        }
         
-        list = db_obj.feedback_show(Int32.Parse(Session["offset"].ToString()));
-        total = list[0].Count();
     }
 
     protected void last_Click(object sender, EventArgs e)
@@ -122,17 +126,19 @@ public partial class feedback : System.Web.UI.Page
         var db_obj = new db_connect();
 
         int cnt = db_obj.feedback_count(1);
-
-        if (cnt > 0)
+        if (cnt != 0)
         {
-            if (cnt % 2 == 0)
-                Session["offset"] = cnt - 2;
-            else
-                Session["offset"] = cnt - 1;
-        }
+            if (cnt > 0)
+            {
+                if (cnt % 2 == 0)
+                    Session["offset"] = cnt - 2;
+                else
+                    Session["offset"] = cnt - 1;
+            }
 
-        list = db_obj.feedback_show(Int32.Parse(Session["offset"].ToString()));
-        total = list[0].Count();
+            list = db_obj.feedback_show(Int32.Parse(Session["offset"].ToString()));
+            total = list[0].Count();
+        }
     }
 
     protected void new_post_Click(object sender, EventArgs e)

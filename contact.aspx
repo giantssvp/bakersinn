@@ -75,7 +75,7 @@
 					<p> BAKER'S INN <br /> SHOP NO.1, ISHA CHAMBER, <br /> 853 BHAWANI PETH, <br /> PUNE - 411042 </p>
 				</div>
 				<div>
-					<a href="index.aspx" class="callus">CALL US <span> 9975050031 / 8600647770 </span></a>
+					<a class="callus">CALL US <span> 9975050031 / 8600647770 </span></a>
 				</div>
 			</div>
 			<div class="section">
